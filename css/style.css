@@ -472,6 +472,77 @@ h6 {
   font-weight: 500;
 }
 
+.requirement {
+  padding: 50px 0;
+}
+.requirement__title {
+  margin-bottom: 30px;
+}
+.requirement__body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 126px 20px 126px;
+  -ms-grid-columns: 371px 20px 371px 20px 371px;
+      grid-template: repeat(2, 126px)/repeat(3, 371px);
+  grid-auto-rows: 126px;
+  grid-auto-flow: row;
+  gap: 20px;
+}
+.requirement__item {
+  padding: 30px 16px 30px 30px;
+  border-radius: 20px;
+  background-color: #eaf1f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.requirement__item_big {
+  -ms-grid-row-span: 2;
+  grid-row: span 2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.requirement__image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  width: 55px;
+  max-height: 55px;
+}
+.requirement__item_big .requirement__image {
+  width: 116px;
+  max-height: 116px;
+}
+.requirement__text {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 120%;
+  color: #3c4d6b;
+}
+.requirement__bold {
+  font-weight: 700;
+}
+.requirement__item:nth-child(1) .requirement__image {
+  background: url("../img/requirement/01.svg") 0 0/contain no-repeat;
+}
+.requirement__item:nth-child(2) .requirement__image {
+  background: url("../img/requirement/02.svg") 0 0/contain no-repeat;
+}
+.requirement__item:nth-child(3) .requirement__image {
+  background: url("../img/requirement/03.svg") 0 0/contain no-repeat;
+}
+.requirement__item:nth-child(4) .requirement__image {
+  background: url("../img/requirement/04.svg") 0 0/contain no-repeat;
+}
+.requirement__item:nth-child(5) .requirement__image {
+  background: url("../img/requirement/05.svg") 0 0/contain no-repeat;
+}
+
 .wrapper {
   width: 100%;
   overflow: hidden;

@@ -1,0 +1,59 @@
+.requirement {
+   padding: 50px 0;
+   &__title {
+      margin-bottom: 30px;
+   }
+   &__body {
+      display: grid;
+      grid-template: repeat(2, 126px) / repeat(3, 371px);
+      grid-auto-rows: 126px;
+      grid-auto-flow: row;
+      gap: 20px;
+   }
+   &__item {
+      padding: 30px 16px 30px 30px;
+      border-radius: 20px;
+      background-color: #eaf1f8;
+      display: flex;
+      gap: 30px;
+      &_big {
+         grid-row: span 2;
+         flex-direction: column;
+      }
+   }
+   &__image {
+      flex: 1 0 auto;
+      width: 55px;
+      max-height: 55px;
+   }
+   &__item_big .requirement__image {
+      width: 116px;
+      max-height: 116px;
+   }
+   &__text {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 120%;
+      color: #3c4d6b;
+   }
+   &__bold {
+      font-weight: 700;
+   }
+   &__item:nth-child(1) .requirement__image {
+      background: url('../img/requirement/01.svg') 0 0 / contain no-repeat;
+   }
+   &__item:nth-child(2) .requirement__image {
+      background: url('../img/requirement/02.svg') 0 0 / contain no-repeat;
+   }
+   &__item:nth-child(3) .requirement__image {
+      background: url('../img/requirement/03.svg') 0 0 / contain no-repeat;
+   }
+   &__item:nth-child(4) .requirement__image {
+      background: url('../img/requirement/04.svg') 0 0 / contain no-repeat;
+   }
+   &__item:nth-child(5) .requirement__image {
+      background: url('../img/requirement/05.svg') 0 0 / contain no-repeat;
+   }
+}
