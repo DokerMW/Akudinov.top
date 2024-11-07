@@ -1,0 +1,44 @@
+.usability {
+   background-color: #eaf1f8;
+   padding: 40px 0;
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__title {
+      text-align: left !important;
+      margin-bottom: 11px;
+   }
+   &__text {
+      max-width: 530px;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 125%;
+      color: rgba(60, 77, 107, 0.77);
+   }
+   &__price {
+      text-align: right;
+   }
+   &__cost {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 54px;
+      color: #286ab3;
+      margin-bottom: 7px;
+   }
+   &__more {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #22b573;
+      & span {
+         padding-right: 22px;
+         background: url('../img/icons/arrow.svg') 100% 55% no-repeat;
+      }
+   }
+}

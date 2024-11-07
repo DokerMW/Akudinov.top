@@ -612,7 +612,7 @@ h6 {
 }
 
 .advantages {
-  padding: 50px 0;
+  padding: 50px 0 52px 0;
   background-color: #fff;
 }
 .advantages__title {
@@ -692,6 +692,57 @@ h6 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
+}
+
+.usability {
+  background-color: #eaf1f8;
+  padding: 40px 0;
+}
+.usability__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.usability__title {
+  text-align: left !important;
+  margin-bottom: 11px;
+}
+.usability__text {
+  max-width: 530px;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  color: rgba(60, 77, 107, 0.77);
+}
+.usability__price {
+  text-align: right;
+}
+.usability__cost {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  color: #286ab3;
+  margin-bottom: 7px;
+}
+.usability__more {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #22b573;
+}
+.usability__more span {
+  padding-right: 22px;
+  background: url("../img/icons/arrow.svg") 100% 55% no-repeat;
 }
 
 .wrapper {
