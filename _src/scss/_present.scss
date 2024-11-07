@@ -1,0 +1,75 @@
+.present {
+   background: url('../img/present/main_bg.jpg') 0 0 / cover no-repeat;
+   &__container {
+      position: relative;
+   }
+   &__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 75px 0 73px 0;
+   }
+   &__info {
+      max-width: 580px;
+      color: #ffffff;
+      margin-right: 50px;
+      padding-bottom: 18px;
+   }
+   &__title {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      margin-bottom: 30px;
+   }
+   &__text {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+   }
+   &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 37px 20px;
+      border-radius: 20px;
+      background-color: #fff;
+      gap: 13px;
+      & input {
+         width: 320px;
+         height: 50px;
+         padding-left: 20px;
+         font-family: 'SF UI Display';
+         font-style: normal;
+         font-weight: 300;
+         font-size: 16px;
+         color: #3c4d6b;
+         border-radius: 10px;
+         border: 1px solid rgba(60, 77, 107, 0.1);
+      }
+   }
+   &__subtitle {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      color: #3c4d6b;
+   }
+}
+.form-present {
+   &__policy {
+      max-width: 265px;
+      text-align: center;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 8px;
+      line-height: 125%;
+      color: #3c4d6b;
+      & span {
+         font-weight: 500;
+      }
+   }
+}
