@@ -1,0 +1,67 @@
+.advantages {
+   padding: 50px 0;
+   background-color: #fff;
+   &__title {
+      margin-bottom: 25px;
+   }
+   &__body {
+      display: flex;
+      height: 100%;
+      margin: 0 -10px;
+   }
+   &__column {
+      flex: 0 1 25%;
+      padding: 0 10px;
+   }
+   &__item {
+   }
+}
+.item-advantages {
+   background-color: #fff;
+   height: 100%;
+   border-radius: 20px;
+   padding: 30px 30px 32px 30px;
+   box-shadow: 5px 5px 44px rgba(0, 0, 0, 0.04), 5px 5px 44px rgba(0, 0, 0, 0.04);
+   display: flex;
+   flex-direction: column;
+   &__header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+   }
+   &__img {
+      justify-self: start;
+      width: 33px;
+      height: 33px;
+      margin-right: 15px;
+      &_01 {
+         background: url('../img/advantages/01.svg') 0 0 / contain no-repeat;
+      }
+      &_02 {
+         background: url('../img/advantages/02.svg') 0 0 / contain no-repeat;
+      }
+      &_03 {
+         background: url('../img/advantages/03.svg') 0 0 / contain no-repeat;
+      }
+      &_04 {
+         background: url('../img/advantages/04.svg') 0 0 / contain no-repeat;
+      }
+   }
+   &__title {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      color: #3c4d6b;
+   }
+   &__text {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 125%;
+      color: #3c4d6b;
+      opacity: 0.6;
+      flex: 1 0 100%;
+   }
+}
