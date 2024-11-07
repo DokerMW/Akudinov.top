@@ -1,0 +1,59 @@
+.stages {
+   background-color: #eaf1f8;
+   padding: 50px 0;
+   &__title {
+      margin-bottom: 20px;
+   }
+   &__subtitle {
+      margin-bottom: 30px;
+   }
+   &__body {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      margin: 0 -10px;
+   }
+   &__column {
+      flex: 0 1 50%;
+      padding: 0 10px;
+      margin-bottom: 20px;
+   }
+}
+.item-stage {
+   height: 100%;
+   background-color: #fff;
+   border-radius: 20px;
+   padding: 30px;
+   display: flex;
+   gap: 20px;
+   &__number {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 38px;
+      color: #00c0f3;
+   }
+   &__title {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      color: #3c4d6b;
+      margin-bottom: 19px;
+   }
+   &__point {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #3c4d6b;
+      opacity: 0.6;
+      padding-left: 20px;
+      line-height: 120%;
+      background: url('../img/icons/check.svg') 0 3px / 12px 12px no-repeat;
+      margin-bottom: 13px;
+      &:last-child {
+         margin: 0px 0px 0px 0px;
+      }
+   }
+}
