@@ -14,5 +14,4 @@ const swiper = new Swiper('.examples__swiper', {
 new Accordion('.accordion-container', {
 	duration: 400,
 	showMultiple: true,
-
 });
