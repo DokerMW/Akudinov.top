@@ -1,0 +1,138 @@
+.tariff {
+   padding: 50px 0 55px 0;
+   &__wrapper {
+      text-align: center;
+   }
+   &__title {
+      margin-bottom: 17px;
+   }
+
+   &__subtitle {
+      margin-bottom: 32px;
+   }
+
+   &__body {
+      display: flex;
+      margin: 0 -10px 32px -10px;
+   }
+
+   &__column {
+      flex: 0 1 33.333%;
+      padding: 0 10px;
+   }
+
+   &__item {
+   }
+
+   &__info {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: rgba(60, 77, 107, 0.77);
+   }
+}
+
+.subtitle {
+   font-family: 'SF UI Display';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   text-align: center;
+   color: rgba(60, 77, 107, 0.77);
+}
+.item-tariff {
+   box-shadow: 5px 5px 44px rgba(0, 0, 0, 0.09);
+   border-radius: 20px;
+   padding: 30px 32px 30px 30px;
+   text-align: left;
+   &__title {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      text-align: center;
+      color: #3c4d6b;
+      margin-bottom: 20px;
+   }
+
+   &__price {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 38px;
+      text-align: center;
+      color: #286ab3;
+      margin-bottom: 20px;
+   }
+
+   &__list {
+      margin-bottom: 28px;
+   }
+
+   &__point {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #3c4d6b;
+      opacity: 0.6;
+      margin-bottom: 16px;
+      padding-left: 21px;
+      position: relative;
+      line-height: 120%;
+      &:last-child {
+         margin: 0px 0px 0px 0px;
+      }
+
+      &::before {
+         content: '';
+         position: absolute;
+         background: url('../img/icons/check.svg') 0 0 no-repeat;
+         width: 10px;
+         height: 8px;
+         top: 3px;
+         left: 0;
+      }
+   }
+
+   &__sublist {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      margin-bottom: 36px;
+   }
+
+   &__subpoint {
+      width: 105px;
+      height: 24px;
+      position: relative;
+      &:nth-child(1) {
+         background: url('../img/tariffs/yandex.png') 21px 0 / contain no-repeat;
+      }
+      &:nth-child(2) {
+         background: url('../img/tariffs/google.png') 21px 50% / cover no-repeat;
+      }
+      &::before {
+         content: '';
+         position: absolute;
+         background: url('../img/icons/check.svg') 0 0 no-repeat;
+         width: 10px;
+         height: 8px;
+         top: 5px;
+         left: 0;
+      }
+   }
+
+   &__btn {
+      width: 100%;
+      display: block;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+      padding: 15px 0;
+   }
+}
