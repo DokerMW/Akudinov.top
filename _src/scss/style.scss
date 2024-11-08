@@ -128,13 +128,14 @@ $second_color: #282739;
 @import '_receive.scss';
 @import '_cooperation.scss';
 @import '_tariff.scss';
+@import '_appform.scss';
 
 //===============================================================================================//
 
 //===== Оболочка ================================================================================//
 .wrapper {
    width: 100%;
-   //  overflow: hidden;
+   overflow: hidden;
    min-height: 100%;
    display: flex;
    flex-direction: column;
