@@ -1,0 +1,119 @@
+.cooperation {
+   background-color: #eaf1f8;
+   padding: 50px 0;
+   &__title {
+      margin-bottom: 30px;
+   }
+   &__body {
+      display: flex;
+      margin: 0 -21px;
+   }
+   &__column {
+      flex: 0 1 33.333%;
+      padding: 0 21px;
+      display: flex;
+      &:nth-child(1) .item-cooperation__image {
+         background: url('../img/cooperation/01.svg') 0 0 / contain no-repeat;
+      }
+      &:nth-child(2) .item-cooperation__image {
+         background: url('../img/cooperation/02.svg') 0 0 / contain no-repeat;
+      }
+      &:nth-child(3) .item-cooperation__image {
+         background: url('../img/cooperation/03.svg') 0 0 / contain no-repeat;
+      }
+   }
+   &__item {
+      background-color: #fff;
+      border-radius: 20px;
+   }
+}
+.item-cooperation {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   &__body {
+      flex: 1 0 auto;
+      padding: 27px 5px 0 30px;
+   }
+   &__image {
+      width: 69px;
+      height: 67px;
+      margin-bottom: 15px;
+   }
+   &__text {
+      max-width: 290px;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 125%;
+      color: #3c4d6b;
+      opacity: 0.6;
+      margin-bottom: 25px;
+   }
+   &__link {
+      & span {
+         font-family: 'SF UI Display';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 17px;
+         color: #22b573;
+         display: inline-block;
+         margin-bottom: 30px;
+         padding-right: 23px;
+         position: relative;
+         &::after {
+            content: '';
+            background: url('../img/icons/arrow.svg') 0 0 no-repeat;
+            width: 14px;
+            height: 8px;
+            display: inline-block;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            position: absolute;
+         }
+      }
+   }
+   &__step {
+      height: 55px;
+      background-color: #286ab3;
+      border-radius: 10px;
+      padding-left: 30px;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      color: #ffffff;
+      & span {
+         display: flex;
+         align-items: center;
+         width: 100%;
+         height: 100%;
+         position: relative;
+         flex: 1 0 100%;
+         &::after {
+            content: '';
+            position: absolute;
+            width: 44px;
+            height: 44px;
+            background-color: #286ab3;
+            right: -15px;
+            top: 5px;
+            border-radius: 10px;
+            transform: rotate(45deg);
+         }
+         &::before {
+            content: '';
+            position: absolute;
+            width: 44px;
+            height: 44px;
+            background-color: #286ab3;
+            right: -15px;
+            bottom: 5px;
+            border-radius: 10px;
+            transform: rotate(-45deg);
+         }
+      }
+   }
+}
