@@ -38,38 +38,6 @@ $second_color: #282739;
 
 //===============================================================================================//
 
-//===== Импорты ==============================================================================//
-@import '_nullstyle.scss';
-@import '_header.scss';
-@import '_present.scss';
-@import '_requirement.scss';
-@import '_stages.scss';
-@import '_advantages.scss';
-@import '_usability.scss';
-@import '_examples.scss';
-@import '_included.scss';
-@import '_application.scss';
-
-//===============================================================================================//
-
-//===== Оболочка ================================================================================//
-.wrapper {
-   width: 100%;
-   //  overflow: hidden;
-   min-height: 100%;
-   display: flex;
-   flex-direction: column;
-   font-family: $fontfamily;
-   font-weight: normal;
-}
-.page {
-   flex: 1 1 auto;
-}
-body._lock {
-   overflow: hidden;
-}
-//===============================================================================================//
-
 .breadcrumb {
    position: absolute;
    top: 20px;
@@ -120,6 +88,7 @@ body._lock {
    background-color: #22b573;
    border-radius: 10px;
    padding: 18px 21px;
+   text-transform: uppercase;
 }
 .title {
    font-family: 'SF UI Display';
@@ -144,3 +113,35 @@ body._lock {
 }
 .swiper-slide {
 }
+
+//===== Импорты ==============================================================================//
+@import '_nullstyle.scss';
+@import '_header.scss';
+@import '_present.scss';
+@import '_requirement.scss';
+@import '_stages.scss';
+@import '_advantages.scss';
+@import '_usability.scss';
+@import '_examples.scss';
+@import '_included.scss';
+@import '_application.scss';
+
+//===============================================================================================//
+
+//===== Оболочка ================================================================================//
+.wrapper {
+   width: 100%;
+   //  overflow: hidden;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   font-family: $fontfamily;
+   font-weight: normal;
+}
+.page {
+   flex: 1 1 auto;
+}
+body._lock {
+   overflow: hidden;
+}
+//===============================================================================================//
