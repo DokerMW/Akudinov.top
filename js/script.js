@@ -11,3 +11,8 @@ const swiper = new Swiper('.examples__swiper', {
 		prevEl: '.examples__prev-btn',
 	},
 });
+new Accordion('.accordion-container', {
+	duration: 400,
+	showMultiple: true,
+
+});
