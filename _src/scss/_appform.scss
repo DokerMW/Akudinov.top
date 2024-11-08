@@ -1,0 +1,89 @@
+.appform {
+   background-color: #eaf1f8;
+   padding: 50px 0 0 0;
+   &__container {
+      position: relative;
+   }
+   &__body {
+      width: 625px;
+      text-align: left;
+      padding-bottom: 48px;
+   }
+   &__title {
+      margin-bottom: 12px;
+      text-align: left;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 38px;
+      color: #3c4d6b;
+   }
+   &__text {
+      margin-bottom: 25px;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #3c4d6b;
+      opacity: 0.6;
+   }
+   &__grid {
+      display: grid;
+      grid-template: 50px 50px 100px / repeat(2, 321px);
+      gap: 21px;
+      margin-bottom: 26px;
+      & input {
+         padding-left: 21px;
+         width: 321px;
+         height: 50px;
+         border-radius: 10px;
+         font-family: 'SF UI Display';
+         font-style: normal;
+         font-weight: 300;
+         font-size: 16px;
+         color: #3c4d6b;
+         background-color: #fff;
+      }
+      & textarea {
+         resize: none;
+         border-radius: 10px;
+         grid-column: span 2;
+         padding: 12px 21px;
+         font-family: 'SF UI Display';
+         font-style: normal;
+         font-weight: 300;
+         font-size: 16px;
+         color: #3c4d6b;
+      }
+   }
+   &__agree {
+      max-width: 500px;
+      display: inline-block;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 14px;
+      color: #3c4d6b;
+      opacity: 0.7;
+      margin-bottom: 26px;
+      & a {
+         color: #22b573;
+      }
+   }
+   &__btn {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 100%;
+      color: #ffffff;
+      padding: 17px 87px;
+   }
+   &__image {
+      position: absolute;
+      right: 12px;
+      bottom: 0;
+   }
+}

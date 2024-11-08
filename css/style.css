@@ -1251,7 +1251,7 @@ h6 {
 }
 
 .tariff {
-  padding: 50px 0 55px 0;
+  padding: 50px 0 57px 0;
 }
 .tariff__wrapper {
   text-align: center;
@@ -1383,6 +1383,100 @@ h6 {
   text-align: center;
   color: #ffffff;
   padding: 15px 0;
+}
+
+.appform {
+  background-color: #eaf1f8;
+  padding: 50px 0 0 0;
+}
+.appform__container {
+  position: relative;
+}
+.appform__body {
+  width: 625px;
+  text-align: left;
+  padding-bottom: 48px;
+}
+.appform__title {
+  margin-bottom: 12px;
+  text-align: left;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  color: #3c4d6b;
+}
+.appform__text {
+  margin-bottom: 25px;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3c4d6b;
+  opacity: 0.6;
+}
+.appform__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50px 21px 50px 21px 100px;
+  -ms-grid-columns: 321px 21px 321px;
+      grid-template: 50px 50px 100px/repeat(2, 321px);
+  gap: 21px;
+  margin-bottom: 26px;
+}
+.appform__grid input {
+  padding-left: 21px;
+  width: 321px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #3c4d6b;
+  background-color: #fff;
+}
+.appform__grid textarea {
+  resize: none;
+  border-radius: 10px;
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  padding: 12px 21px;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #3c4d6b;
+}
+.appform__agree {
+  max-width: 500px;
+  display: inline-block;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #3c4d6b;
+  opacity: 0.7;
+  margin-bottom: 26px;
+}
+.appform__agree a {
+  color: #22b573;
+}
+.appform__btn {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ffffff;
+  padding: 17px 87px;
+}
+.appform__image {
+  position: absolute;
+  right: 12px;
+  bottom: 0;
 }
 
 .wrapper {
