@@ -33,6 +33,9 @@
       font-size: 38px;
       color: #00c0f3;
    }
+   &__body {
+      padding-top: 10px;
+   }
    &__title {
       font-family: 'SF UI Display';
       font-style: normal;
@@ -49,7 +52,7 @@
       color: #3c4d6b;
       opacity: 0.6;
       padding-left: 20px;
-      line-height: 120%;
+      line-height: 110%;
       background: url('../img/icons/check.svg') 0 3px / 12px 12px no-repeat;
       margin-bottom: 13px;
       &:last-child {
