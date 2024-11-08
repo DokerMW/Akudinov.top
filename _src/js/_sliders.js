@@ -1,10 +1,12 @@
 const swiper = new Swiper('.examples__swiper', {
 	// Optional parameters
 	direction: 'horizontal',
-	loop: true,
+	loop: false,
+	slidesPerView: 3,
+	spaceBetween: 20,
 	// Navigation arrows
 	navigation: {
-		nextEl: '.exaples__next-btn',
-		prevEl: '.exaples__prev-btn',
+		nextEl: '.examples__next-btn',
+		prevEl: '.examples__prev-btn',
 	},
 });

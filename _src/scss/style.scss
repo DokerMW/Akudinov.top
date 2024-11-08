@@ -53,7 +53,7 @@ $second_color: #282739;
 //===== Оболочка ================================================================================//
 .wrapper {
    width: 100%;
-   overflow: hidden;
+   //  overflow: hidden;
    min-height: 100%;
    display: flex;
    flex-direction: column;
@@ -135,4 +135,10 @@ body._lock {
    text-align: center;
    color: #3c4d6b;
    opacity: 0.6;
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
 }

@@ -696,7 +696,7 @@ h6 {
 
 .usability {
   background-color: #eaf1f8;
-  padding: 40px 0;
+  padding: 40px 0 41px 0;
 }
 .usability__row {
   display: -webkit-box;
@@ -745,9 +745,96 @@ h6 {
   background: url("../img/icons/arrow.svg") 100% 55% no-repeat;
 }
 
+.examples {
+  padding: 50px 0;
+  margin-bottom: 200px;
+}
+.examples__title {
+  margin-bottom: 20px;
+}
+.examples__subtitle {
+  margin-bottom: 30px;
+}
+.examples__body {
+  position: relative;
+}
+.examples__body .swiper-button-next::after, .examples__body .swiper-button-prev::after {
+  font-size: 26px;
+  color: #286ab3;
+}
+.examples__body .swiper-button-disabled {
+  color: rgba(60, 77, 107, 0.1);
+}
+
+.examples__prev-btn {
+  left: -43px;
+}
+.examples__next-btn {
+  right: -43px;
+}
+
+.item-example {
+  padding: 30px 30px 32px 30px;
+  background-color: #eaf1f8;
+  border-radius: 20px;
+}
+.item-example__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 311px;
+  margin-bottom: 33px;
+}
+.item-example__img {
+  width: 311px;
+  height: 78px;
+  overflow: hidden;
+  margin-bottom: 13px;
+}
+.item-example__img:last-child {
+  margin: 0px 0px 0px 0px;
+}
+.item-example__img img {
+  width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.item-example__title {
+  margin-bottom: 18px;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #3c4d6b;
+}
+.item-example__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3c4d6b;
+  opacity: 0.6;
+}
+.item-example__time span {
+  padding-left: 22px;
+  background: url("../img/icons/clock.svg") 0 50% no-repeat;
+}
+.item-example__params {
+  padding-left: 20px;
+  background: url("../img/icons/params.svg") 0 0 no-repeat;
+}
+
 .wrapper {
   width: 100%;
-  overflow: hidden;
   min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
