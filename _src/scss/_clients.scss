@@ -1,0 +1,36 @@
+.clients {
+   padding: 50px 0 100px 0;
+   &__title {
+      margin-bottom: 35px;
+   }
+   &__body {
+      position: relative;
+      & .swiper-button-next::after,
+      & .swiper-button-prev::after {
+         font-size: 26px;
+         color: #286ab3;
+      }
+      & .swiper-button-disabled {
+         color: rgba($color: #3c4d6b, $alpha: 0.1);
+      }
+   }
+   &__swiper-wrapper {
+      align-items: center;
+   }
+   &__prev-btn {
+      left: -43px;
+   }
+   &__next-btn {
+      right: -43px;
+   }
+}
+.clients__body .clients__swiper-pagination {
+   bottom: -30px;
+}
+.clients__body .swiper-pagination-bullet-active {
+   background-color: #22b573;
+}
+.clients__body .swiper-pagination-bullet {
+   width: 5px;
+   height: 5px;
+}

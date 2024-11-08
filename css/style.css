@@ -541,7 +541,7 @@ h6 {
 }
 
 .requirement {
-  padding: 50px 0;
+  padding: 50px 0 48px 0;
 }
 .requirement__title {
   margin-bottom: 30px;
@@ -655,6 +655,9 @@ h6 {
   font-size: 38px;
   color: #00c0f3;
 }
+.item-stage__body {
+  padding-top: 10px;
+}
 .item-stage__title {
   font-family: "SF UI Display";
   font-style: normal;
@@ -671,7 +674,7 @@ h6 {
   color: #3c4d6b;
   opacity: 0.6;
   padding-left: 20px;
-  line-height: 120%;
+  line-height: 110%;
   background: url("../img/icons/check.svg") 0 3px/12px 12px no-repeat;
   margin-bottom: 13px;
 }
@@ -814,7 +817,7 @@ h6 {
 }
 
 .examples {
-  padding: 50px 0;
+  padding: 50px 0 49px 0;
 }
 .examples__title {
   margin-bottom: 20px;
@@ -902,7 +905,7 @@ h6 {
 
 .included {
   background-color: #eaf1f8;
-  padding: 50px 0 49px 0;
+  padding: 50px 0 48px 0;
 }
 .included__title {
   margin-bottom: 30px;
@@ -920,7 +923,7 @@ h6 {
   padding: 0px 30px;
 }
 .accordion-included__list {
-  padding: 20px 0;
+  padding: 24px 0 20px 0;
 }
 .accordion-included__point {
   font-family: "SF UI Display";
@@ -928,7 +931,7 @@ h6 {
   font-weight: 400;
   font-size: 16px;
   color: rgba(60, 77, 107, 0.8);
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   background: url("../img/icons/check.svg") 0 3px no-repeat;
   padding-left: 20px;
 }
@@ -1251,7 +1254,7 @@ h6 {
 }
 
 .tariff {
-  padding: 50px 0 57px 0;
+  padding: 50px 0 60px 0;
 }
 .tariff__wrapper {
   text-align: center;
@@ -1477,6 +1480,47 @@ h6 {
   position: absolute;
   right: 12px;
   bottom: 0;
+}
+
+.clients {
+  padding: 50px 0 100px 0;
+}
+.clients__title {
+  margin-bottom: 35px;
+}
+.clients__body {
+  position: relative;
+}
+.clients__body .swiper-button-next::after, .clients__body .swiper-button-prev::after {
+  font-size: 26px;
+  color: #286ab3;
+}
+.clients__body .swiper-button-disabled {
+  color: rgba(60, 77, 107, 0.1);
+}
+.clients__swiper-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.clients__prev-btn {
+  left: -43px;
+}
+.clients__next-btn {
+  right: -43px;
+}
+
+.clients__body .clients__swiper-pagination {
+  bottom: -30px;
+}
+
+.clients__body .swiper-pagination-bullet-active {
+  background-color: #22b573;
+}
+
+.clients__body .swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
 }
 
 .wrapper {
