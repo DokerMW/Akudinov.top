@@ -2184,6 +2184,11 @@ h6 {
   padding-left: 37px;
   position: relative;
 }
+@media (min-width: 1190px) {
+  .top-footer__email:hover {
+    text-decoration: underline;
+  }
+}
 .top-footer__email::before {
   content: "";
   position: absolute;
@@ -2249,6 +2254,11 @@ h6 {
   font-size: 16px;
   color: #ffffff;
   white-space: nowrap;
+}
+@media (min-width: 1190px) {
+  .menu-footer__link:hover {
+    text-decoration: underline;
+  }
 }
 
 .bottom-footer {

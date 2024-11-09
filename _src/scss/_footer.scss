@@ -106,6 +106,11 @@
       display: block;
       padding-left: 37px;
       position: relative;
+      @media (min-width: 1190px) {
+         &:hover {
+            text-decoration: underline;
+         }
+      }
       &::before {
          content: '';
          position: absolute;
@@ -165,6 +170,11 @@
       font-size: 16px;
       color: #ffffff;
       white-space: nowrap;
+      @media (min-width: 1190px) {
+         &:hover {
+            text-decoration: underline;
+         }
+      }
    }
 }
 .bottom-footer {
