@@ -236,7 +236,17 @@
       color: #3c4d6b;
       white-space: nowrap;
       padding-left: 19px;
-      background: url('../img/icons/phone.svg') 0 50% / 13px 13px no-repeat;
       margin-left: auto;
+      position: relative;
+      &::after {
+         content: '';
+         position: absolute;
+         top: 50%;
+         left: 0;
+         width: 14px;
+         height: 14px;
+         transform: translate(0, -50%);
+         background: url('../img/icons/phone.svg') 0 0 no-repeat;
+      }
    }
 }
