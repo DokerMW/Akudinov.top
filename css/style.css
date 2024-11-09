@@ -1102,6 +1102,7 @@ h6 {
 .included__title {
   margin-bottom: 30px;
 }
+
 .accordion-included__item {
   border-radius: 15px;
 }
@@ -1124,8 +1125,17 @@ h6 {
   font-size: 16px;
   color: rgba(60, 77, 107, 0.8);
   margin-bottom: 24px;
-  background: url("../img/icons/check.svg") 0 3px no-repeat;
   padding-left: 20px;
+  position: relative;
+}
+.accordion-included__point::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 11px;
+  height: 9px;
+  background: url("../img/icons/check.svg") 0 0 no-repeat;
 }
 .accordion-included__point:last-child {
   margin: 0px 0px 0px 0px;
