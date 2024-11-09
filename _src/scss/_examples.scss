@@ -72,11 +72,31 @@
    &__time {
       & span {
          padding-left: 22px;
-         background: url('../img/icons/clock.svg') 0 50% no-repeat;
+         position: relative;
+         &::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+            background: url('../img/icons/clock.svg') 0 0 no-repeat;
+         }
       }
    }
    &__params {
       padding-left: 20px;
-      background: url('../img/icons/params.svg') 0 0 no-repeat;
+      position: relative;
+      &::before {
+         content: '';
+         position: absolute;
+         width: 16px;
+         height: 16px;
+         top: 50%;
+         left: 0;
+         transform: translate(0, -50%);
+         background: url('../img/icons/params.svg') 0 0 no-repeat;
+      }
    }
 }
