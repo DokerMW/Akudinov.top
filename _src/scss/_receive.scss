@@ -19,7 +19,16 @@
       color: rgba(60, 77, 107, 0.77);
       margin-bottom: 15px;
       padding-left: 19px;
-      background: url('../img/icons/check.svg') 0 5px no-repeat;
+      position: relative;
+      &::before {
+         content: '';
+         position: absolute;
+         top: 5px;
+         left: 0;
+         width: 11px;
+         height: 9px;
+         background: url('../img/icons/check.svg') 0 0 no-repeat;
+      }
       &:last-child {
          margin: 0px 0px 0px 0px;
       }
