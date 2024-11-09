@@ -19,9 +19,20 @@
    &__column {
       flex: 0 1 33.333%;
       padding: 0 10px;
-   }
-
-   &__item {
+      position: relative;
+      display: flex;
+      &.reverse {
+         & .item-tariff {
+            transform: scale(-1, 1);
+            z-index: -1;
+            box-shadow: none;
+         }
+         & .item-tariff_reverse {
+            transform: scale(1, 1);
+            z-index: 1;
+            box-shadow: 5px 5px 44px rgba(0, 0, 0, 0.09);
+         }
+      }
    }
 
    &__info {
@@ -47,12 +58,12 @@
    padding: 30px 32px 30px 30px;
    text-align: left;
    transition: all 0.3s;
-
-   @media (min-width: 1190px) {
-      &:hover {
-         transform: scale(1.05);
-      }
-   }
+   position: relative;
+   z-index: 1;
+   background-color: #fff;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
    &__title {
       font-family: 'SF UI Display';
       font-style: normal;
@@ -75,6 +86,7 @@
 
    &__list {
       margin-bottom: 28px;
+      flex: 1 0 auto;
    }
 
    &__point {
@@ -142,4 +154,33 @@
       color: #ffffff;
       padding: 15px 0;
    }
+   &__mirror-link {
+      position: absolute;
+      width: 30px;
+      height: 20px;
+      top: 30px;
+      right: 30px;
+      background: url('../img/icons/rounded_arrow.svg') 0 0 no-repeat;
+      cursor: pointer;
+   }
+}
+.item-tariff_reverse {
+   position: absolute;
+   max-width: 371px;
+   top: 0;
+   left: 10px;
+   z-index: -1;
+   background-color: #fff;
+   transform: scale(0.1, 1);
+   box-shadow: none;
+}
+.item-tariff__mirror-link_reverse {
+   position: absolute;
+   width: 30px;
+   height: 20px;
+   top: 30px;
+   left: 30px;
+   transform: scale(-1, 1);
+   background: url('../img/icons/rounded_arrow.svg') 0 0 no-repeat;
+   cursor: pointer;
 }

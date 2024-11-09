@@ -21,3 +21,6 @@ const tabOpening = (event) => {
 		textTab.classList.add('active')
 	}
 }
+
+
+
