@@ -1404,6 +1404,11 @@ h6 {
   padding-right: 23px;
   position: relative;
 }
+@media (min-width: 1190px) {
+  .item-cooperation__link span:hover {
+    text-decoration: underline;
+  }
+}
 .item-cooperation__link span::after {
   content: "";
   background: url("../img/icons/arrow.svg") 0 0 no-repeat;
