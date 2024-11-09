@@ -177,13 +177,43 @@
       margin-right: 20px;
       height: 78px;
    }
+   &__submenu {
+      display: none;
+      position: absolute;
+      flex-direction: column;
+      gap: 20px;
+      z-index: 9;
+      background-color: #3d4147;
+      top: 99%;
+      left: 0;
+      padding: 50px;
+      & a {
+         flex: 0 1 25%;
+         white-space: nowrap;
+         font-family: 'SF UI Display';
+         font-style: normal;
+         font-weight: 500;
+         font-size: 16px;
+         color: #ffffff;
+         @media (min-width: 1190px) {
+            &:hover {
+               text-decoration: underline;
+            }
+         }
+      }
+   }
    &__item {
       margin-right: 8px;
       min-height: 100%;
       display: flex;
       align-items: center;
+      position: relative;
+      z-index: 10;
       &:last-child {
          margin: 0px 0px 0px 0px;
+      }
+      &:hover .main-header__submenu {
+         display: flex;
       }
    }
    &__link {

@@ -51,7 +51,7 @@
             <a href="#" class="top-header__profile">
                <span>Личный кабинет</span>
             </a>
-            <button class="top-header__callback">ЗАКАЗАТЬ ЗВОНОК</button>
+            <a href="#callback" class="top-header__callback _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
          </div>
       </div>
    </div>
@@ -68,24 +68,54 @@
                   <a href="#" class="main-header__link main-header__link_drop">
                      <span>Продвижение сайтов</span>
                   </a>
+                  <menu class="main-header__submenu">
+                     <li class="main-header__subitem"><a href="#">В Яндексе</a></li>
+                     <li class="main-header__subitem"><a href="#">Интернет-магазина</a></li>
+                     <li class="main-header__subitem"><a href="#">По трафику</a></li>
+                     <li class="main-header__subitem"><a href="#">По позициям</a></li>
+                     <li class="main-header__subitem"><a href="#">С оплатой за результат</a></li>
+                  </menu>
                </li>
                <li class="main-header__item">
-                  <a href="#" class="main-header__link main-header__link_drop"
-                     ><span>Аудит сайта</span></a
-                  >
+                  <a href="#" class="main-header__link main-header__link_drop">
+                     <span>Аудит сайта</span>
+                  </a>
+                  <menu class="main-header__submenu">
+                     <li class="main-header__subitem"><a href="#">Технический аудит</a></li>
+                     <li class="main-header__subitem"><a href="#">Поисковый SEO-аудит</a></li>
+                     <li class="main-header__subitem"><a href="#">Экспресс-аудит</a></li>
+                     <li class="main-header__subitem">
+                        <a href="#">Аудит коммерческих факторов</a>
+                     </li>
+                     <li class="main-header__subitem"><a href="#">Аудит юзабилити</a></li>
+                     <li class="main-header__subitem">
+                        <a href="#">Вывод страниц из-под фильтра</a>
+                     </li>
+                  </menu>
                </li>
                <li class="main-header__item">
                   <a href="#" class="main-header__link main-header__link_drop">
                      <span>Разработка, создание сайтов</span>
                   </a>
+                  <menu class="main-header__submenu">
+                     <li class="main-header__subitem"><a href="#">Техническая поддержка</a></li>
+                     <li class="main-header__subitem"><a href="#">Сопровождение web-ресурса</a></li>
+                  </menu>
                </li>
                <li class="main-header__item">
                   <a href="#" class="main-header__link">Контекстная реклама</a>
                </li>
                <li class="main-header__item">
-                  <a href="#" class="main-header__link main-header__link_drop"
-                     ><span>О компании</span></a
-                  >
+                  <a href="#" class="main-header__link main-header__link_drop">
+                     <span>О компании</span>
+                  </a>
+                  <menu class="main-header__submenu">
+                     <li class="main-header__subitem"><a href="#">Контакты</a></li>
+                     <li class="main-header__subitem"><a href="#">Вакансии</a></li>
+                     <li class="main-header__subitem"><a href="#">Гарантии</a></li>
+                     <li class="main-header__subitem"><a href="#">Акции</a></li>
+                     <li class="main-header__subitem"><a href="#">FAQ</a></li>
+                  </menu>
                </li>
             </menu>
             <div class="main-header__contacts">
@@ -987,6 +1017,24 @@
       </div>
    </div>
 </section>
+<div class="popup popup_callback">
+   <div class="popup__content">
+      <div class="popup__body">
+         <div class="popup__close"><span></span></div>
+         <form class="callback__form form-callback" action="#" method="POST">
+            <h3 class="callback__subtitle popup__subtitle">Закажите звонок</h3>
+            <input type="text" name="username" placeholder="Имя" />
+            <input type="tel" name="phone" placeholder="Телефон" />
+            <button type="submit" class="form-callback__btn btn">Заказать звонок</button>
+            <div class="form-callback__policy">
+               Отправляя форму вы соглашаетесь на обработку персональных данных, защищенных
+               <span>политикой конфиденциальности</span> и обрабатываемых для выполнения вашей
+               заявки.
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
          </main>
 <footer class="footer">
    <div class="_container">

@@ -505,6 +505,36 @@ h6 {
   margin-right: 20px;
   height: 78px;
 }
+.main-header__submenu {
+  display: none;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  z-index: 9;
+  background-color: #3d4147;
+  top: 99%;
+  left: 0;
+  padding: 50px;
+}
+.main-header__submenu a {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  white-space: nowrap;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+}
+@media (min-width: 1190px) {
+  .main-header__submenu a:hover {
+    text-decoration: underline;
+  }
+}
 .main-header__item {
   margin-right: 8px;
   min-height: 100%;
@@ -514,9 +544,16 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: 10;
 }
 .main-header__item:last-child {
   margin: 0px 0px 0px 0px;
+}
+.main-header__item:hover .main-header__submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .main-header__link {
   font-family: "SF UI Display";
@@ -2277,6 +2314,175 @@ h6 {
 }
 .bottom-footer p:last-child {
   margin: 0px 0px 0px 0px;
+}
+
+.popup {
+  -webkit-overflow-scrolling: touch;
+  z-index: 100;
+  padding: 30px 10px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: visibility 0.8s ease 0s;
+  transition: visibility 0.8s ease 0s;
+  visibility: hidden;
+}
+.popup::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease 0s;
+  transition: opacity 0.8s ease 0s;
+}
+.popup.show {
+  visibility: visible;
+  overflow: auto;
+}
+.popup.show::before {
+  opacity: 1;
+}
+.popup.show .popup__body {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.popup._active {
+  overflow: auto;
+  visibility: visible;
+}
+.popup._active::before {
+  opacity: 1;
+}
+.popup._active .popup__body {
+  -webkit-transition: all 0.3s ease 0.2s;
+  transition: all 0.3s ease 0.2s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.popup__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+}
+.popup__body {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background-color: #ffffff;
+  padding: 37px 20px;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 20px;
+}
+.popup__body .form-callback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  background-color: #fff;
+  gap: 13px;
+}
+.popup__body .form-callback input {
+  width: 320px;
+  height: 50px;
+  padding-left: 20px;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #3c4d6b;
+  border-radius: 10px;
+  border: 1px solid rgba(60, 77, 107, 0.1);
+}
+.popup__body .form-callback__policy {
+  max-width: 265px;
+  text-align: center;
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 8px;
+  line-height: 125%;
+  color: #3c4d6b;
+}
+.popup__body .form-callback__policy span {
+  font-weight: 500;
+}
+.popup__body .form-callback__btn {
+  padding: 16px 17px;
+}
+.popup__subtitle {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #3c4d6b;
+}
+.popup__close {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 30;
+}
+.popup__close span {
+  position: relative;
+}
+.popup__close span::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #3c4d6b;
+}
+.popup__close span::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #3c4d6b;
 }
 
 .wrapper {
