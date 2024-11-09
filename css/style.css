@@ -1616,7 +1616,7 @@ h6 {
 .appform__body {
   width: 625px;
   text-align: left;
-  padding-bottom: 48px;
+  padding-bottom: 46px;
 }
 .appform__title {
   margin-bottom: 12px;
@@ -1684,6 +1684,11 @@ h6 {
 }
 .appform__agree a {
   color: #22b573;
+}
+@media (min-width: 1190px) {
+  .appform__agree a:hover {
+    text-decoration: underline;
+  }
 }
 .appform__btn {
   font-family: "SF UI Display";
@@ -1875,6 +1880,11 @@ h6 {
   position: relative;
   padding-right: 23px;
 }
+@media (min-width: 1190px) {
+  .slide-review-text__link span:hover {
+    text-decoration: underline;
+  }
+}
 .slide-review-text__link span::after {
   content: "";
   background: url("../img/icons/arrow.svg") 0 0 no-repeat;
@@ -1929,6 +1939,14 @@ h6 {
   height: 40px;
   border-radius: 10px;
   background-color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media (min-width: 1190px) {
+  .slide-review-video__play:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 .slide-review-video__play span {
   display: inline-block;
