@@ -62,6 +62,18 @@
       font-style: normal;
       font-weight: 700;
       font-size: 12px;
+      &:active {
+         position: relative;
+         top: 1px;
+         left: 1px;
+      }
+      @media (min-width: 1190px) {
+         &:hover {
+            background-color: #22b573;
+            color: #fff;
+            transition: all 0.3s;
+         }
+      }
    }
 }
 .header-nav {

@@ -347,6 +347,19 @@ h6 {
   font-weight: 700;
   font-size: 12px;
 }
+.top-header__callback:active {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+@media (min-width: 1190px) {
+  .top-header__callback:hover {
+    background-color: #22b573;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
 
 .header-nav {
   margin-right: 30px;
