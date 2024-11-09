@@ -967,7 +967,23 @@ h6 {
 }
 .usability__more span {
   padding-right: 22px;
-  background: url("../img/icons/arrow.svg") 100% 55% no-repeat;
+  position: relative;
+}
+.usability__more span::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 15px;
+  height: 8px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background: url("../img/icons/arrow.svg") 0 0 no-repeat;
+}
+@media (min-width: 1190px) {
+  .usability__more span:hover {
+    text-decoration: underline;
+  }
 }
 
 .examples {

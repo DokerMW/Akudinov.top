@@ -38,7 +38,22 @@
       color: #22b573;
       & span {
          padding-right: 22px;
-         background: url('../img/icons/arrow.svg') 100% 55% no-repeat;
+         position: relative;
+         &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 15px;
+            height: 8px;
+            transform: translate(0, -50%);
+            background: url('../img/icons/arrow.svg') 0 0 no-repeat;
+         }
+         @media (min-width: 1190px) {
+            &:hover {
+               text-decoration: underline;
+            }
+         }
       }
    }
 }
