@@ -1472,7 +1472,7 @@ h6 {
 }
 
 .tariff {
-  padding: 50px 0 60px 0;
+  padding: 50px 0 58px 0;
 }
 .tariff__wrapper {
   text-align: center;
@@ -1561,7 +1561,7 @@ h6 {
   background: url("../img/icons/check.svg") 0 0 no-repeat;
   width: 10px;
   height: 8px;
-  top: 3px;
+  top: 5px;
   left: 0;
 }
 .item-tariff__sublist {
