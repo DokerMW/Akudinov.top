@@ -1523,6 +1523,19 @@ h6 {
   height: 5px;
 }
 
+.reviews {
+  margin-bottom: 500px;
+}
+
+.tabs__item {
+  display: none;
+}
+
+#video.active,
+#text.active {
+  display: block;
+}
+
 .wrapper {
   width: 100%;
   overflow: hidden;
