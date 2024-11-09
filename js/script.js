@@ -138,7 +138,6 @@ for (let index = 0; index < popup_link.length; index++) {
 		if (unlock) {
 			let item = el.getAttribute('href').replace('#', '');
 			let video = el.getAttribute('data-video');
-			console.log(video);
 
 			popup_open(item, video);
 		}
