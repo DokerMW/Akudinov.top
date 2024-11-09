@@ -52,6 +52,10 @@ $second_color: #282739;
          opacity: 0.6;
          padding-left: 10px;
       }
+      & a:hover {
+         opacity: 1;
+         text-decoration: underline;
+      }
       &:first-child a {
          padding: 0;
       }

@@ -118,6 +118,10 @@
   opacity: 0.6;
   padding-left: 10px;
 }
+.breadcrumb__item a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
 .breadcrumb__item:first-child a {
   padding: 0;
 }
