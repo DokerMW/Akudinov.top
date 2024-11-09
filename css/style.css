@@ -157,7 +157,7 @@
 }
 .btn:hover {
   color: #22b573;
-  background-color: transparent;
+  background-color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
