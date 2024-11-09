@@ -26,12 +26,19 @@
       align-items: center;
       flex-direction: column;
       height: 100%;
+      @media (min-width: 1190px) {
+         &:hover .extra__image {
+            transform: translate(0, -10px);
+         }
+      }
    }
 
    &__image {
       width: 120px;
       min-height: 95px;
       margin-bottom: 20px;
+      transition: all 0.3s;
+
       &_pr {
          background: url('../img/extra/pr.svg') 0 0 / contain no-repeat;
       }
@@ -54,5 +61,10 @@
       line-height: 120%;
       text-align: center;
       color: #3c4d6b;
+      @media (min-width: 1190px) {
+         &:hover {
+            text-decoration: underline;
+         }
+      }
    }
 }

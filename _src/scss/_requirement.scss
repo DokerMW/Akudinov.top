@@ -16,9 +16,17 @@
       background-color: #eaf1f8;
       display: flex;
       gap: 30px;
+      transition: all 0.3s;
+
       &_big {
          grid-row: span 2;
          flex-direction: column;
+      }
+
+      @media (min-width: 1190px) {
+         &:hover {
+            transform: scale(1.05);
+         }
       }
    }
    &__image {

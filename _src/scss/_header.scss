@@ -212,8 +212,11 @@
       &:last-child {
          margin: 0px 0px 0px 0px;
       }
-      &:hover .main-header__submenu {
-         display: flex;
+
+      @media (min-width: 1190px) {
+         &:hover .main-header__submenu {
+            display: flex;
+         }
       }
    }
    &__link {

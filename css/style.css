@@ -550,10 +550,12 @@ h6 {
 .main-header__item:last-child {
   margin: 0px 0px 0px 0px;
 }
-.main-header__item:hover .main-header__submenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (min-width: 1190px) {
+  .main-header__item:hover .main-header__submenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .main-header__link {
   font-family: "SF UI Display";
@@ -748,6 +750,8 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .requirement__item_big {
   -ms-grid-row-span: 2;
@@ -756,6 +760,12 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media (min-width: 1190px) {
+  .requirement__item:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
 }
 .requirement__image {
   -webkit-box-flex: 1;
@@ -1555,6 +1565,14 @@ h6 {
   border-radius: 20px;
   padding: 30px 32px 30px 30px;
   text-align: left;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media (min-width: 1190px) {
+  .item-tariff:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
 }
 .item-tariff__title {
   font-family: "SF UI Display";
@@ -2071,10 +2089,18 @@ h6 {
           flex-direction: column;
   height: 100%;
 }
+@media (min-width: 1190px) {
+  .extra__item:hover .extra__image {
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px);
+  }
+}
 .extra__image {
   width: 120px;
   min-height: 95px;
   margin-bottom: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .extra__image_pr {
   background: url("../img/extra/pr.svg") 0 0/contain no-repeat;
@@ -2096,6 +2122,11 @@ h6 {
   line-height: 120%;
   text-align: center;
   color: #3c4d6b;
+}
+@media (min-width: 1190px) {
+  .extra__text:hover {
+    text-decoration: underline;
+  }
 }
 
 .footer {
