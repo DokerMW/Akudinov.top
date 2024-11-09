@@ -1533,7 +1533,7 @@ h6 {
 
 .reviews {
   background-color: #eaf1f8;
-  padding: 50px 0 32px 0;
+  padding: 50px 0 48px 0;
 }
 .reviews__title {
   margin-bottom: 30px;
@@ -1762,6 +1762,75 @@ h6 {
   font-size: 16px;
   color: #ffffff;
   opacity: 0.6;
+}
+
+.extra {
+  padding: 50px 0;
+}
+.extra__title {
+  margin-bottom: 20px;
+}
+.extra__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -10px;
+  height: 100%;
+}
+.extra__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+}
+.extra__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  background-color: #eaf1f8;
+  border-radius: 20px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+.extra__image {
+  width: 120px;
+  min-height: 95px;
+  margin-bottom: 20px;
+}
+.extra__image_pr {
+  background: url("../img/extra/pr.svg") 0 0/contain no-repeat;
+}
+.extra__image_context {
+  background: url("../img/extra/context.svg") 0 0/contain no-repeat;
+}
+.extra__image_dev {
+  background: url("../img/extra/dev.svg") 0 0/contain no-repeat;
+}
+.extra__image_audit {
+  background: url("../img/extra/audit.svg") 0 0/contain no-repeat;
+}
+.extra__text {
+  font-family: "SF UI Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: #3c4d6b;
 }
 
 .wrapper {

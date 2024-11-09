@@ -1,0 +1,58 @@
+.extra {
+   padding: 50px 0;
+   &__title {
+      margin-bottom: 20px;
+   }
+
+   &__body {
+      display: flex;
+      margin: 0 -10px;
+      height: 100%;
+   }
+
+   &__column {
+      flex: 0 1 25%;
+      padding: 0 10px;
+      display: flex;
+      min-height: 100%;
+   }
+
+   &__item {
+      flex: 1 0 100%;
+      background-color: #eaf1f8;
+      border-radius: 20px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+   }
+
+   &__image {
+      width: 120px;
+      min-height: 95px;
+      margin-bottom: 20px;
+      &_pr {
+         background: url('../img/extra/pr.svg') 0 0 / contain no-repeat;
+      }
+      &_context {
+         background: url('../img/extra/context.svg') 0 0 / contain no-repeat;
+      }
+      &_dev {
+         background: url('../img/extra/dev.svg') 0 0 / contain no-repeat;
+      }
+      &_audit {
+         background: url('../img/extra/audit.svg') 0 0 / contain no-repeat;
+      }
+   }
+
+   &__text {
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 120%;
+      text-align: center;
+      color: #3c4d6b;
+   }
+}
