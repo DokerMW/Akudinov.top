@@ -347,10 +347,39 @@ h6 {
 }
 .header-nav__item {
   margin-right: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 14px;
+}
+.header-nav__item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: -2px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.header-nav__item::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 0;
+  bottom: -2px;
+  background-color: #fff;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
 }
 .header-nav__item:last-child {
   margin: 0px 0px 0px 0px;
+}
+@media (min-width: 1190px) {
+  .header-nav__item:hover:before {
+    width: 100%;
+  }
 }
 .header-nav__link {
   vertical-align: top;
