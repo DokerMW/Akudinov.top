@@ -148,7 +148,6 @@
    }
 }
 .main-header {
-   padding: 20px 0 22px 0;
    &__row {
       display: flex;
       justify-content: start;
@@ -156,7 +155,7 @@
    }
    &__logo {
       width: 142px;
-      margin-right: 54px;
+      margin-right: 40px;
       & a {
          display: inline-block;
          width: 142px;
@@ -170,10 +169,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-right: 50px;
+      margin-right: 20px;
+      height: 78px;
    }
    &__item {
-      margin-right: 28px;
+      margin-right: 8px;
+      min-height: 100%;
+      display: flex;
+      align-items: center;
       &:last-child {
          margin: 0px 0px 0px 0px;
       }
@@ -185,10 +188,34 @@
       font-size: 13px;
       color: #3c4d6b;
       white-space: nowrap;
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+      padding: 0 14px;
+      @media (min-width: 1190px) {
+         &:hover {
+            transition: all 0.2s;
+            background-color: #3d4147;
+            color: #fff;
+         }
+      }
    }
    &__link_drop {
-      padding-right: 14px;
-      background: url('../img/icons/dropmenu.svg') 100% 50% / 7px 5px no-repeat;
+      padding-right: 20px;
+      position: relative;
+      &::after {
+         content: '';
+         position: absolute;
+         width: 7px;
+         height: 4px;
+         right: 5px;
+         top: 50%;
+         transform: translate(0, -50%);
+         background: url('../img/icons/dropmenu.svg') 0 0 no-repeat;
+      }
+      &:hover::after {
+         background: url('../img/icons/dropmenu_white.svg') 0 0 no-repeat;
+      }
    }
    &__contacts {
       margin-left: auto;
@@ -205,5 +232,6 @@
       white-space: nowrap;
       padding-left: 19px;
       background: url('../img/icons/phone.svg') 0 50% / 13px 13px no-repeat;
+      margin-left: auto;
    }
 }

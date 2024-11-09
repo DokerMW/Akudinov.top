@@ -448,9 +448,6 @@ h6 {
   margin: 0px 0px 0px 0px;
 }
 
-.main-header {
-  padding: 20px 0 22px 0;
-}
 .main-header__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -464,7 +461,7 @@ h6 {
 }
 .main-header__logo {
   width: 142px;
-  margin-right: 54px;
+  margin-right: 40px;
 }
 .main-header__logo a {
   display: inline-block;
@@ -485,10 +482,18 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 50px;
+  margin-right: 20px;
+  height: 78px;
 }
 .main-header__item {
-  margin-right: 28px;
+  margin-right: 8px;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .main-header__item:last-child {
   margin: 0px 0px 0px 0px;
@@ -500,10 +505,42 @@ h6 {
   font-size: 13px;
   color: #3c4d6b;
   white-space: nowrap;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 14px;
+}
+@media (min-width: 1190px) {
+  .main-header__link:hover {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    background-color: #3d4147;
+    color: #fff;
+  }
 }
 .main-header__link_drop {
-  padding-right: 14px;
-  background: url("../img/icons/dropmenu.svg") 100% 50%/7px 5px no-repeat;
+  padding-right: 20px;
+  position: relative;
+}
+.main-header__link_drop::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 4px;
+  right: 5px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background: url("../img/icons/dropmenu.svg") 0 0 no-repeat;
+}
+.main-header__link_drop:hover::after {
+  background: url("../img/icons/dropmenu_white.svg") 0 0 no-repeat;
 }
 .main-header__contacts {
   margin-left: auto;
@@ -525,6 +562,7 @@ h6 {
   white-space: nowrap;
   padding-left: 19px;
   background: url("../img/icons/phone.svg") 0 50%/13px 13px no-repeat;
+  margin-left: auto;
 }
 
 .present {
