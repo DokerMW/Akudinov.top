@@ -2134,10 +2134,32 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 991.98px) {
+  .application__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
 .application__title {
   text-align: left !important;
   margin-bottom: 11px;
   color: #fff;
+}
+@media (max-width: 991.98px) {
+  .application__title {
+    text-align: center !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .application__title {
+    margin-bottom: 15px;
+  }
 }
 .application__text {
   max-width: 730px;
@@ -2148,6 +2170,17 @@ h6 {
   line-height: 125%;
   color: rgba(255, 255, 255, 0.77);
 }
+@media (max-width: 991.98px) {
+  .application__text {
+    margin: 0px 0px 10px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .application__text {
+    font-size: 16px;
+    margin: 0px 0px 20px 0px;
+  }
+}
 .application__btn {
   padding: 16px 79px;
   margin-right: 15px;
@@ -2156,6 +2189,11 @@ h6 {
   font-weight: 600;
   font-size: 16px;
   line-height: 100%;
+}
+@media (max-width: 479.98px) {
+  .application__btn {
+    padding: 14px 60px;
+  }
 }
 
 .receive {
