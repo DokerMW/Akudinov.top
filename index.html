@@ -142,9 +142,9 @@
                необходимо провести глубокий аудит интернет-сайта.
             </p>
          </div>
-         <form class="present__form form-present" action="#" method="POST">
+         <form class="present__form form-present" action="#" id="form1">
             <h3 class="present__subtitle">Бесплатный аудит</h3>
-            <input type="text" name="username" placeholder="Имя" />
+            <input type="text" name="name" placeholder="Имя" />
             <input type="text" name="domen" placeholder="Домен" />
             <input type="tel" name="phone" placeholder="Телефон" />
             <button type="submit" class="form-present__btn btn">ПОЛУЧИТЬ БЕСПЛАТНЫЙ АУДИТ</button>
@@ -576,7 +576,7 @@
                коммерческое предложение с точным расчетом стоимости именно для вас
             </div>
          </div>
-         <button class="application__btn btn">Оставить заявку</button>
+         <a href="#callback" class="application__btn btn _popup-link">Оставить заявку</a>
       </div>
    </div>
 </section>
@@ -609,7 +609,9 @@
                      привести ваш ресурс в соответствие со стандартами, достаточно оформить заявку
                      на нашем сайте
                   </p>
-                  <a href="#" class="item-cooperation__link"><span>Оформить заявку</span></a>
+                  <a href="#callback" class="item-cooperation__link _popup-link"
+                     ><span>Оформить заявку</span></a
+                  >
                </div>
                <div class="item-cooperation__step"><span>Шаг 01</span></div>
             </div>
@@ -799,12 +801,12 @@
             специалисты компании Method разработают индивидуальное решение с учетом приоритетов и
             задач Вашего бизнеса.
          </div>
-         <form action="#" class="appform__form">
+         <form action="#" class="appform__form" id="form3">
             <div class="appform__grid">
                <input type="text" name="name" placeholder="Имя" />
                <input type="tel" name="phone" placeholder="Телефон" />
                <input type="text" name="domen" placeholder="Домен" />
-               <input type="email" name="email" placeholder="Email" />
+               <input type="text" name="email" placeholder="Email" autocomplete="off" />
                <textarea name="comment" placeholder="Дополнительно"></textarea>
             </div>
             <span class="appform__agree">
@@ -1123,9 +1125,9 @@
    <div class="popup__content">
       <div class="popup__body">
          <div class="popup__close"><span></span></div>
-         <form class="callback__form form-callback" action="#" method="POST">
+         <form class="callback__form form-callback" action="#" id="form2">
             <h3 class="callback__subtitle popup__subtitle">Закажите звонок</h3>
-            <input type="text" name="username" placeholder="Имя" />
+            <input type="text" name="name" placeholder="Имя" />
             <input type="tel" name="phone" placeholder="Телефон" />
             <button type="submit" class="form-callback__btn btn">Заказать звонок</button>
             <div class="form-callback__policy">
@@ -1139,13 +1141,14 @@
 </div>
 
 <div class="popup popup_video">
-	<div class="popup__content">
-		<div class="popup__body">
-			<div class="popup__close popup__close_video"></div>
-			<div class="popup__video _video"></div>
-		</div>
-	</div>
-</div>         </main>
+   <div class="popup__content">
+      <div class="popup__body">
+         <div class="popup__close popup__close_video"></div>
+         <div class="popup__video _video"></div>
+      </div>
+   </div>
+</div>
+         </main>
 <footer class="footer">
    <div class="_container">
       <div class="footer__top top-footer">
@@ -1281,7 +1284,7 @@
          </nav>
       </div>
       <div class="footer__btns">
-         <button class="footer__btn btn">ЗАКАЗАТЬ ЗВОНОК</button>
+         <a href="#callback" class="footer__btn btn _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
          <button class="footer__btn footer__btn_profile btn"><span>Личный кабинет</span></button>
       </div>
       <div class="footer__bottom bottom-footer">

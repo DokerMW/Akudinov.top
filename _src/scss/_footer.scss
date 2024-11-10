@@ -17,6 +17,8 @@
       color: #22b573;
       padding: 14px 19px;
       text-transform: none;
+      display: flex;
+      align-items: center;
       &_profile {
          & span {
             position: relative;
