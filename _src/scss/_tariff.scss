@@ -12,7 +12,6 @@
          margin-bottom: 10px;
       }
    }
-
    &__subtitle {
       margin-bottom: 32px;
       font-family: 'SF UI Display';
@@ -26,7 +25,6 @@
          margin-bottom: 20px;
       }
    }
-
    &__body {
       display: flex;
       margin: 0 -10px 32px -10px;
@@ -38,7 +36,6 @@
          align-items: center;
       }
    }
-
    &__column {
       flex: 0 1 33.333%;
       padding: 0 10px;
@@ -64,7 +61,6 @@
          }
       }
    }
-
    &__info {
       font-family: 'SF UI Display';
       font-style: normal;
@@ -75,9 +71,6 @@
          font-size: 12px;
       }
    }
-}
-
-.subtitle {
 }
 .item-tariff {
    box-shadow: 5px 5px 44px rgba(0, 0, 0, 0.09);
@@ -110,7 +103,6 @@
          margin-bottom: 10px;
       }
    }
-
    &__price {
       font-family: 'SF UI Display';
       font-style: normal;
@@ -124,7 +116,6 @@
          margin-bottom: 10px;
       }
    }
-
    &__list {
       margin-bottom: 28px;
       flex: 1 0 auto;
@@ -132,7 +123,6 @@
          margin-bottom: 15px;
       }
    }
-
    &__point {
       font-family: 'SF UI Display';
       font-style: normal;
@@ -150,7 +140,6 @@
       &:last-child {
          margin: 0px 0px 0px 0px;
       }
-
       &::before {
          content: '';
          position: absolute;
@@ -161,7 +150,6 @@
          left: 0;
       }
    }
-
    &__sublist {
       display: flex;
       align-items: center;
@@ -171,7 +159,6 @@
          margin-bottom: 25px;
       }
    }
-
    &__subpoint {
       width: 105px;
       height: 24px;
@@ -192,7 +179,6 @@
          left: 0;
       }
    }
-
    &__btn {
       width: 100%;
       display: block;

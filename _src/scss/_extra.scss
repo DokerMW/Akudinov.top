@@ -6,7 +6,6 @@
    &__title {
       margin-bottom: 20px;
    }
-
    &__body {
       display: flex;
       margin: 0 -10px;
@@ -18,7 +17,6 @@
          margin: 0 -5px;
       }
    }
-
    &__column {
       flex: 0 1 25%;
       padding: 0 10px;
@@ -33,7 +31,6 @@
          margin-bottom: 10px;
       }
    }
-
    &__item {
       flex: 1 0 100%;
       background-color: $light_grey_bg;
@@ -52,7 +49,6 @@
          padding: 10px;
       }
    }
-
    &__image {
       width: 120px;
       min-height: 95px;
@@ -79,7 +75,6 @@
          background: url('../img/extra/audit.svg') 0 0 / contain no-repeat;
       }
    }
-
    &__text {
       font-family: 'SF UI Display';
       font-style: normal;

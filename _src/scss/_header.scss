@@ -135,7 +135,6 @@
          background-color: #fff;
          transition: width 0.3s;
       }
-
       &:last-child {
          margin: 0px 0px 0px 0px;
       }
@@ -178,38 +177,38 @@
       }
    }
    &__burger {
-      display: none; //скрываем иконку меню бургера по умолчанию
+      display: none;
       @media (max-width: $md3) {
-         z-index: 1001; //поднимаем над слоями
-         display: block; // возвращаем отображение иконки меню бургера
-         position: relative; //для z-index и для относительного позиционирования полосок бургера
-         width: 30px; //ширина контейнера для иконки бургера
-         height: 18px; //высота контейнера для иконки бургера
-         cursor: pointer; //меняем вид курсора при наведении на бургер
+         z-index: 1001;
+         display: block;
+         position: relative;
+         width: 30px;
+         height: 18px;
+         cursor: pointer;
          margin-right: 10px;
          &::before,
          &::after,
          & span {
-            left: 0; //позиционируем по левому краю контейнера
-            position: absolute; // располагаем относительно контейнера бургера
-            height: 10%; //высота каждой полоски 10% от родителя
-            width: 100%; //на всю длину родителя
-            transition: all 0.3s ease 0s; //анимация для превращения бургера в крестик
-            background-color: $dark_grey_bg; //цвет полосок бургера
+            left: 0;
+            position: absolute;
+            height: 10%;
+            width: 100%;
+            transition: all 0.3s ease 0s;
+            background-color: $dark_grey_bg;
          }
          &::after,
          &::before {
-            content: ''; //добавляем для работы псевдоэлементов
+            content: '';
          }
          &::before {
-            top: 0; //расположение верхней полоски в самом верху контейнера
+            top: 0;
          }
          &::after {
-            bottom: 0; //расположение нижней полоски в самом низу контейнера
+            bottom: 0;
          }
          & span {
-            top: 50%; //расположение средней полоски на 50% от контейнера
-            transform: scale(1) translate(0px, -50%); //возвращение средней полоски на половину своего размера
+            top: 50%;
+            transform: scale(1) translate(0px, -50%);
          }
          &._active {
             & + .main-header__logo {
@@ -217,19 +216,16 @@
             }
          }
          &._active span {
-            //работает со средней полоской когда нажимаем на иконку бургера
-            transform: scale(0); //уменьшаем полоску до нуля
+            transform: scale(0);
          }
          &._active::before {
-            //работает с верхней полоской бургера когда нажимаем на иконку бургера
-            top: 50%; //опускаем ниже для формирования крестика
-            transform: rotate(-45deg) translate(0px, -50%); //наклоняем для формирования крестика
+            top: 50%;
+            transform: rotate(-45deg) translate(0px, -50%);
             background-color: $main_text;
          }
          &._active::after {
-            //работает с нижней полоской бургера когда нажимаем на иконку бургера
-            bottom: 47%; //поднимаем выше для формирования крестика
-            transform: rotate(45deg) translate(0px, 50%); //наклоняем для формирования крестика
+            bottom: 47%;
+            transform: rotate(45deg) translate(0px, 50%);
             background-color: $main_text;
          }
       }
@@ -244,7 +240,6 @@
       @media (max-width: $md3) {
          width: auto;
       }
-
       & a {
          display: inline-block;
          width: 142px;
@@ -343,7 +338,6 @@
       &:last-child {
          margin: 0px 0px 0px 0px;
       }
-
       @media (min-width: 1190px) {
          &:hover .main-header__submenu {
             display: flex;
@@ -414,7 +408,6 @@
             background: url('../img/icons/dropmenu_white.svg') 0 0 no-repeat;
          }
       }
-
       @media (max-width: $md2) {
          padding-right: 10px;
       }
@@ -497,15 +490,14 @@
          z-index: 2001;
       }
       &::before {
-         //создаем плашку для шапки чтобы под неё уходило меню
          content: '';
-         position: fixed; //фиксируем её сверху
-         width: 65%; //делаем её на всю ширину
+         position: fixed;
+         width: 65%;
          top: 0;
-         right: -100%; //убираем меню в закрытом состоянии бургера
-         height: 50px; //высота плашки
+         right: -100%;
+         height: 50px;
          background-color: #ffffff;
-         z-index: 2000; //поднимаем плашку над открытым меню бургер и под логотипом с кнопкой бургера.
+         z-index: 2000;
       }
       &._active {
          right: 0;

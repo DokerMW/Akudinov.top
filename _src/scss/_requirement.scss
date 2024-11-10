@@ -46,7 +46,6 @@
          gap: 18px;
          padding: 15px 20px;
       }
-
       &_big {
          grid-row: span 2;
          flex-direction: column;
@@ -59,7 +58,6 @@
             grid-column: auto;
          }
       }
-
       @media (min-width: 1190px) {
          &:hover {
             transform: scale(1.05);

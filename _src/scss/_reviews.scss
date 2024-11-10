@@ -7,20 +7,9 @@
    &__title {
       margin-bottom: 30px;
    }
-
-   &__tabs {
-   }
-
-   &__swiper {
-   }
-
    & .text-reviews__swiper-wrapper {
       min-height: 276px;
    }
-
-   &__slide {
-   }
-
    &__prev-btn {
       left: -43px;
    }
@@ -28,7 +17,6 @@
       right: -43px;
    }
 }
-
 .tabs {
    text-align: center;
    &__menu {
@@ -36,7 +24,6 @@
       margin-bottom: 25px;
       display: inline-block;
    }
-
    &__btn {
       padding: 0 10px 10px 10px;
       font-family: 'SF UI Display';
@@ -46,14 +33,12 @@
       color: $main_text;
       opacity: 0.4;
       line-height: 120%;
-
       &.active {
          color: $green;
          opacity: 1;
          border-bottom: 2px solid $green;
       }
    }
-
    &__body {
       @media (max-width: $md1) {
          max-width: 800px;
@@ -66,7 +51,6 @@
          max-width: 250px;
       }
    }
-
    &__item {
       display: none;
       position: relative;
@@ -101,7 +85,6 @@
          align-items: start;
       }
    }
-
    &__avatar {
       flex: 1 0 auto;
       max-width: 58px;
@@ -123,10 +106,6 @@
          object-fit: contain;
       }
    }
-
-   &__user {
-   }
-
    &__title {
       font-family: 'Inter';
       font-style: normal;
@@ -138,7 +117,6 @@
          font-size: 16px;
       }
    }
-
    &__subtitle {
       font-family: 'Inter';
       font-style: normal;
@@ -152,7 +130,6 @@
          font-size: 12px;
       }
    }
-
    &__text {
       font-family: 'Inter';
       font-style: normal;
@@ -166,7 +143,6 @@
          font-size: 14px;
       }
    }
-
    &__link {
       & span {
          font-family: 'SF UI Display';
@@ -196,21 +172,13 @@
 }
 
 .video-reviews {
-   &__swiper {
-   }
-
    &__swiper-wrapper {
       min-height: 375px;
    }
-
    &__slide {
       max-width: 273px;
-
-      @media (max-width: $md1) {
-      }
    }
 }
-
 .slide-review-video {
    border-radius: 20px;
    padding: 20px;
@@ -264,7 +232,6 @@
          }
       }
    }
-
    &__title {
       font-family: 'SF UI Display';
       font-style: normal;
@@ -273,7 +240,6 @@
       color: #ffffff;
       margin-bottom: 17px;
    }
-
    &__name {
       font-family: 'SF UI Display';
       font-style: normal;
@@ -282,7 +248,6 @@
       color: #ffffff;
       margin-bottom: 5px;
    }
-
    &__subtitle {
       font-family: 'SF UI Display';
       font-style: normal;
@@ -290,13 +255,5 @@
       font-size: 16px;
       color: #ffffff;
       opacity: 0.6;
-   }
-}
-
-.reviews-video {
-   &__prev-btn {
-   }
-
-   &__next-btn {
    }
 }
