@@ -36,7 +36,7 @@
 
    &__item {
       flex: 1 0 100%;
-      background-color: #eaf1f8;
+      background-color: $light_grey_bg;
       border-radius: 20px;
       padding: 20px;
       display: flex;
@@ -87,7 +87,7 @@
       font-size: 20px;
       line-height: 120%;
       text-align: center;
-      color: #3c4d6b;
+      color: $main_text;
       @media (min-width: 1190px) {
          &:hover {
             text-decoration: underline;

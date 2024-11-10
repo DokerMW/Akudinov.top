@@ -1,5 +1,5 @@
 .footer {
-   background-color: #3d4147;
+   background-color: $dark_grey_bg;
    padding: 30px 0 85px 0;
    @media (max-width: $md3) {
       padding: 30px 0;
@@ -11,13 +11,13 @@
    }
    &__btn {
       background-color: transparent;
-      border: 1px solid #22b573;
+      border: 1px solid $green;
       font-family: 'SF UI Display';
       font-style: normal;
       font-weight: 700;
       font-size: 16px;
       text-align: center;
-      color: #22b573;
+      color: $green;
       padding: 14px 19px;
       text-transform: none;
       display: flex;

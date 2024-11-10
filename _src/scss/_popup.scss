@@ -77,7 +77,7 @@
             font-style: normal;
             font-weight: 300;
             font-size: 16px;
-            color: #3c4d6b;
+            color: $main_text;
             border-radius: 10px;
             border: 1px solid rgba(60, 77, 107, 0.1);
          }
@@ -89,7 +89,7 @@
             font-weight: 300;
             font-size: 8px;
             line-height: 125%;
-            color: #3c4d6b;
+            color: $main_text;
             & span {
                font-weight: 500;
             }
@@ -104,7 +104,7 @@
       font-style: normal;
       font-weight: 500;
       font-size: 24px;
-      color: #3c4d6b;
+      color: $main_text;
    }
    // .popup__close
    &__close {
@@ -125,7 +125,7 @@
             left: 0;
             position: absolute;
             transform: rotate(45deg);
-            background-color: #3c4d6b;
+            background-color: $main_text;
          }
          &::after {
             content: '';
@@ -136,7 +136,7 @@
             position: absolute;
             transform: rotate(-45deg);
             transition: all 0.3s;
-            background-color: #3c4d6b;
+            background-color: $main_text;
          }
       }
    }

@@ -83,7 +83,7 @@
          font-style: normal;
          font-weight: 300;
          font-size: 16px;
-         color: #3c4d6b;
+         color: $main_text;
          border-radius: 10px;
          border: 1px solid rgba(60, 77, 107, 0.1);
          @media (max-width: $md4) {
@@ -96,7 +96,7 @@
       font-style: normal;
       font-weight: 500;
       font-size: 24px;
-      color: #3c4d6b;
+      color: $main_text;
    }
 }
 .form-present {
@@ -108,7 +108,7 @@
       font-weight: 300;
       font-size: 8px;
       line-height: 125%;
-      color: #3c4d6b;
+      color: $main_text;
       & span {
          font-weight: 500;
       }

@@ -81,7 +81,7 @@
       font-style: normal;
       font-weight: 700;
       font-size: 20px;
-      color: #3c4d6b;
+      color: $main_text;
       @media (max-width: $md3) {
          font-size: 18px;
       }
@@ -92,7 +92,7 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 125%;
-      color: #3c4d6b;
+      color: $main_text;
       opacity: 0.6;
       flex: 1 0 100%;
       @media (max-width: $md3) {

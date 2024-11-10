@@ -1,6 +1,6 @@
 .top-header {
    padding: 10px 0;
-   background-color: #3d4147;
+   background-color: $dark_grey_bg;
    color: #ffffff;
    @media (max-width: $md3) {
       display: none;
@@ -82,9 +82,9 @@
    }
    &__callback {
       padding: 6px 14.5px;
-      color: #22b573;
+      color: $green;
       background-color: transparent;
-      border: 1px solid #22b573;
+      border: 1px solid $green;
       border-radius: 6px;
       font-family: 'SF UI Display';
       font-style: normal;
@@ -97,7 +97,7 @@
       }
       @media (min-width: 1190px) {
          &:hover {
-            background-color: #22b573;
+            background-color: $green;
             color: #fff;
             transition: all 0.3s;
          }
@@ -195,7 +195,7 @@
             height: 10%; //высота каждой полоски 10% от родителя
             width: 100%; //на всю длину родителя
             transition: all 0.3s ease 0s; //анимация для превращения бургера в крестик
-            background-color: #3d4147; //цвет полосок бургера
+            background-color: $dark_grey_bg; //цвет полосок бургера
          }
          &::after,
          &::before {
@@ -224,13 +224,13 @@
             //работает с верхней полоской бургера когда нажимаем на иконку бургера
             top: 50%; //опускаем ниже для формирования крестика
             transform: rotate(-45deg) translate(0px, -50%); //наклоняем для формирования крестика
-            background-color: #3c4d6b;
+            background-color: $main_text;
          }
          &._active::after {
             //работает с нижней полоской бургера когда нажимаем на иконку бургера
             bottom: 47%; //поднимаем выше для формирования крестика
             transform: rotate(45deg) translate(0px, 50%); //наклоняем для формирования крестика
-            background-color: #3c4d6b;
+            background-color: $main_text;
          }
       }
    }
@@ -296,7 +296,7 @@
       flex-direction: column;
       gap: 20px;
       z-index: 9;
-      background-color: #3d4147;
+      background-color: $dark_grey_bg;
       top: 99%;
       left: 0;
       padding: 50px;
@@ -329,7 +329,7 @@
          }
          @media (max-width: $md3) {
             font-size: 13px;
-            color: #3c4d6b;
+            color: $main_text;
          }
       }
    }
@@ -365,7 +365,7 @@
       font-style: normal;
       font-weight: 400;
       font-size: 13px;
-      color: #3c4d6b;
+      color: $main_text;
       white-space: nowrap;
       align-self: stretch;
       display: flex;
@@ -374,7 +374,7 @@
       @media (min-width: 1190px) {
          &:hover {
             transition: all 0.2s;
-            background-color: #3d4147;
+            background-color: $dark_grey_bg;
             color: #fff;
          }
       }
@@ -384,7 +384,7 @@
       @media (max-width: $md3) {
          padding: 20px 0;
          width: 100%;
-         color: #3c4d6b;
+         color: $main_text;
       }
    }
    &__link_drop {
@@ -433,7 +433,7 @@
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
-      color: #3c4d6b;
+      color: $main_text;
       white-space: nowrap;
       padding-left: 19px;
       margin-left: auto;
@@ -521,7 +521,7 @@
 .mobile-menu__info {
    display: flex;
    flex-direction: column;
-   color: #3c4d6b;
+   color: $main_text;
    & .top-header__address,
    .top-header__schedule {
       display: block;

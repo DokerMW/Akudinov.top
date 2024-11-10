@@ -1,5 +1,5 @@
 .appform {
-   background-color: #eaf1f8;
+   background-color: $light_grey_bg;
    padding: 50px 0 0 0;
    @media (max-width: $md3) {
       padding-top: 40px;
@@ -25,7 +25,7 @@
       font-style: normal;
       font-weight: 700;
       font-size: 38px;
-      color: #3c4d6b;
+      color: $main_text;
       @media (max-width: $md1) {
          text-align: center;
       }
@@ -41,7 +41,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 20px;
-      color: #3c4d6b;
+      color: $main_text;
       opacity: 0.6;
       @media (max-width: $md1) {
          text-align: center;
@@ -73,7 +73,7 @@
          font-style: normal;
          font-weight: 300;
          font-size: 16px;
-         color: #3c4d6b;
+         color: $main_text;
          background-color: #fff;
          @media (max-width: $md3) {
             font-size: 14px;
@@ -88,7 +88,7 @@
          font-style: normal;
          font-weight: 300;
          font-size: 16px;
-         color: #3c4d6b;
+         color: $main_text;
          @media (max-width: $md3) {
             grid-column: auto;
          }
@@ -105,7 +105,7 @@
       font-weight: 300;
       font-size: 12px;
       line-height: 14px;
-      color: #3c4d6b;
+      color: $main_text;
       opacity: 0.7;
       margin-bottom: 26px;
       @media (max-width: $md1) {
@@ -113,7 +113,7 @@
          text-align: center;
       }
       & a {
-         color: #22b573;
+         color: $green;
          @media (min-width: 1190px) {
             &:hover {
                text-decoration: underline;

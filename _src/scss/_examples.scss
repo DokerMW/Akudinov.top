@@ -18,7 +18,7 @@
       & .swiper-button-next::after,
       & .swiper-button-prev::after {
          font-size: 26px;
-         color: #286ab3;
+         color: $blue_bg;
       }
       & .swiper-button-disabled {
          color: rgba($color: #3c4d6b, $alpha: 0.1);
@@ -49,7 +49,7 @@
 }
 .item-example {
    padding: 30px 30px 32px 30px;
-   background-color: #eaf1f8;
+   background-color: $light_grey_bg;
    border-radius: 20px;
    @media (max-width: $md4) {
       padding: 15px;
@@ -86,7 +86,7 @@
       font-style: normal;
       font-weight: 700;
       font-size: 20px;
-      color: #3c4d6b;
+      color: $main_text;
    }
 
    &__info {
@@ -96,7 +96,7 @@
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
-      color: #3c4d6b;
+      color: $main_text;
       opacity: 0.6;
    }
    &__time {
