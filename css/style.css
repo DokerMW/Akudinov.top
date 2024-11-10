@@ -1538,6 +1538,8 @@ h6 {
 @media (max-width: 767.98px) {
   .item-advantages {
     padding: 15px 20px;
+    -webkit-box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.04), 5px 5px 4px rgba(0, 0, 0, 0.04);
+            box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.04), 5px 5px 4px rgba(0, 0, 0, 0.04);
   }
 }
 .item-advantages__header {
@@ -1737,11 +1739,22 @@ h6 {
 .examples {
   padding: 50px 0 49px 0;
 }
+@media (max-width: 767.98px) {
+  .examples {
+    padding: 40px 0;
+  }
+}
 .examples__title {
   margin-bottom: 20px;
 }
 .examples__subtitle {
   margin-bottom: 30px;
+}
+@media (max-width: 767.98px) {
+  .examples__subtitle {
+    max-width: 340px;
+    margin: 0px auto 20px auto;
+  }
 }
 .examples__body {
   position: relative;
@@ -1753,18 +1766,45 @@ h6 {
 .examples__body .swiper-button-disabled {
   color: rgba(60, 77, 107, 0.1);
 }
+@media (max-width: 767.98px) {
+  .examples__body {
+    max-width: 340px;
+    margin: 0px auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .examples__body {
+    max-width: 300px;
+    margin: 0px auto;
+  }
+}
 
 .examples__prev-btn {
   left: -43px;
 }
+@media (max-width: 479.98px) {
+  .examples__prev-btn {
+    left: -30px;
+  }
+}
 .examples__next-btn {
   right: -43px;
+}
+@media (max-width: 479.98px) {
+  .examples__next-btn {
+    right: -30px;
+  }
 }
 
 .item-example {
   padding: 30px 30px 32px 30px;
   background-color: #eaf1f8;
   border-radius: 20px;
+}
+@media (max-width: 479.98px) {
+  .item-example {
+    padding: 15px;
+  }
 }
 .item-example__images {
   display: -webkit-box;
@@ -1777,11 +1817,21 @@ h6 {
   width: 311px;
   margin-bottom: 33px;
 }
+@media (max-width: 1185px) {
+  .item-example__images {
+    width: 100%;
+  }
+}
 .item-example__img {
   width: 311px;
   height: 78px;
   overflow: hidden;
   margin-bottom: 13px;
+}
+@media (max-width: 1185px) {
+  .item-example__img {
+    width: 100%;
+  }
 }
 .item-example__img:last-child {
   margin: 0px 0px 0px 0px;
@@ -1789,8 +1839,8 @@ h6 {
 .item-example__img img {
   width: 100%;
   max-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .item-example__title {
   margin-bottom: 18px;

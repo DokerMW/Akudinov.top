@@ -46,6 +46,7 @@
    flex-direction: column;
    @media (max-width: $md3) {
       padding: 15px 20px;
+      box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.04), 5px 5px 4px rgba(0, 0, 0, 0.04);
    }
    &__header {
       display: flex;

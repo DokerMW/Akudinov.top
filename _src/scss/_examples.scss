@@ -1,10 +1,17 @@
 .examples {
    padding: 50px 0 49px 0;
+   @media (max-width: $md3) {
+      padding: 40px 0;
+   }
    &__title {
       margin-bottom: 20px;
    }
    &__subtitle {
       margin-bottom: 30px;
+      @media (max-width: $md3) {
+         max-width: 340px;
+         margin: 0px auto 20px auto;
+      }
    }
    &__body {
       position: relative;
@@ -16,38 +23,61 @@
       & .swiper-button-disabled {
          color: rgba($color: #3c4d6b, $alpha: 0.1);
       }
+      @media (max-width: $md3) {
+         max-width: 340px;
+         margin: 0px auto;
+      }
+      @media (max-width: $md3) {
+         max-width: 300px;
+         margin: 0px auto;
+      }
    }
 }
 .examples {
    &__prev-btn {
       left: -43px;
+      @media (max-width: $md4) {
+         left: -30px;
+      }
    }
    &__next-btn {
       right: -43px;
+      @media (max-width: $md4) {
+         right: -30px;
+      }
    }
 }
 .item-example {
    padding: 30px 30px 32px 30px;
    background-color: #eaf1f8;
    border-radius: 20px;
+   @media (max-width: $md4) {
+      padding: 15px;
+   }
    &__images {
       display: flex;
       flex-direction: column;
       width: 311px;
       margin-bottom: 33px;
+      @media (max-width: $md1) {
+         width: 100%;
+      }
    }
    &__img {
       width: 311px;
       height: 78px;
       overflow: hidden;
       margin-bottom: 13px;
+      @media (max-width: $md1) {
+         width: 100%;
+      }
       &:last-child {
          margin: 0px 0px 0px 0px;
       }
       & img {
          width: 100%;
          max-height: 100%;
-         object-fit: cover;
+         object-fit: contain;
       }
    }
    &__title {

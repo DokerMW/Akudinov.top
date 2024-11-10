@@ -235,6 +235,17 @@ const swiperExamples = new Swiper('.examples__swiper', {
 		nextEl: '.examples__next-btn',
 		prevEl: '.examples__prev-btn',
 	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		769: {
+			slidesPerView: 2,
+		},
+		1260: {
+			slidesPerView: 3,
+		},
+	},
 });
 
 
