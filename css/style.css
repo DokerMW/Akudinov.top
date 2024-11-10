@@ -3461,6 +3461,11 @@ h6 {
   background-color: #3d4147;
   padding: 30px 0 85px 0;
 }
+@media (max-width: 767.98px) {
+  .footer {
+    padding: 30px 0;
+  }
+}
 .footer__btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3488,6 +3493,17 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 767.98px) {
+  .footer__btn {
+    font-size: 14px;
+  }
+}
+@media (max-width: 479.98px) {
+  .footer__btn {
+    font-size: 12px;
+    padding: 10px 10px;
+  }
+}
 .footer__btn_profile span {
   position: relative;
   padding-left: 25px;
@@ -3513,6 +3529,11 @@ h6 {
   gap: 60px;
   margin-bottom: 23px;
 }
+@media (max-width: 767.98px) {
+  .top-footer {
+    margin-bottom: 28px;
+  }
+}
 .top-footer__logo {
   max-width: 251px;
   max-height: 55px;
@@ -3522,6 +3543,12 @@ h6 {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media (max-width: 767.98px) {
+  .top-footer__logo {
+    max-width: 214px;
+    margin-bottom: 28px;
+  }
 }
 .top-footer__social {
   display: -webkit-box;
@@ -3533,6 +3560,12 @@ h6 {
   gap: 18px;
   margin-bottom: 35px;
 }
+@media (max-width: 767.98px) {
+  .top-footer__social {
+    gap: 13px;
+    margin-bottom: 28px;
+  }
+}
 .top-footer__schedule {
   font-family: "SF UI Display";
   font-style: normal;
@@ -3542,6 +3575,12 @@ h6 {
   margin-bottom: 20px;
   padding-left: 37px;
   position: relative;
+}
+@media (max-width: 767.98px) {
+  .top-footer__schedule {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
 }
 .top-footer__schedule::before {
   content: "";
@@ -3565,6 +3604,12 @@ h6 {
   margin-bottom: 20px;
   padding-left: 37px;
   position: relative;
+}
+@media (max-width: 767.98px) {
+  .top-footer__address {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
 }
 .top-footer__address::before {
   content: "";
@@ -3591,6 +3636,12 @@ h6 {
     text-decoration: underline;
   }
 }
+@media (max-width: 767.98px) {
+  .top-footer__email {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+}
 .top-footer__email::before {
   content: "";
   position: absolute;
@@ -3611,6 +3662,13 @@ h6 {
   color: #ffffff;
   margin-bottom: 14px;
 }
+@media (max-width: 767.98px) {
+  .top-footer__main-phone {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+}
 .top-footer__second-phone {
   display: block;
   font-family: "Roboto";
@@ -3618,6 +3676,13 @@ h6 {
   font-weight: 400;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 767.98px) {
+  .top-footer__second-phone {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+  }
 }
 .top-footer__navigation {
   display: -ms-grid;
@@ -3630,9 +3695,36 @@ h6 {
   -ms-grid-columns: 1fr 88px 1fr 88px 1fr;
       grid-template: 1fr auto/1fr 1fr 1fr;
 }
+@media (max-width: 1185px) {
+  .top-footer__navigation {
+    -ms-grid-rows: auto auto auto;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: auto auto auto/1fr 1fr;
+  }
+}
+@media (max-width: 991.98px) {
+  .top-footer__navigation {
+    -ms-grid-rows: auto auto auto auto auto;
+    -ms-grid-columns: 1fr;
+        grid-template: auto auto auto auto auto/1fr;
+  }
+}
+@media (max-width: 767.98px) {
+  .top-footer__navigation {
+    -ms-grid-rows: auto 15px auto 15px auto;
+    -ms-grid-columns: 1fr 15px 1fr;
+        grid-template: repeat(3, auto)/1fr 1fr;
+    gap: 15px;
+  }
+}
 
 .menu-footer {
   padding-top: 10px;
+}
+@media (max-width: 767.98px) {
+  .menu-footer {
+    padding: 0px 0px 0px 0px;
+  }
 }
 .menu-footer__item {
   margin-bottom: 14px;
@@ -3642,12 +3734,27 @@ h6 {
   margin-bottom: 24px;
   opacity: 1;
 }
+@media (max-width: 767.98px) {
+  .menu-footer__item_head {
+    margin-bottom: 20px;
+  }
+}
 .menu-footer__item_head .menu-footer__link {
   font-family: "SF UI Display";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   color: #ffffff;
+}
+@media (max-width: 767.98px) {
+  .menu-footer__item_head .menu-footer__link {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991.98px) {
+  .menu-footer__item_hidden {
+    display: none;
+  }
 }
 .menu-footer__link {
   font-family: "SF UI Display";
@@ -3679,6 +3786,20 @@ h6 {
 }
 .bottom-footer p:last-child {
   margin: 0px 0px 0px 0px;
+}
+
+@media (max-width: 767.98px) {
+  .top-footer__social-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+  .top-footer__social-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
 .popup {
