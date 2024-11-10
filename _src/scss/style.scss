@@ -112,6 +112,12 @@ $second_color: #282739;
    font-size: 38px;
    text-align: center;
    color: #3c4d6b;
+   @media (max-width: $md2) {
+      font-size: 32px;
+   }
+   @media (max-width: $md3) {
+      font-size: 28px;
+   }
 }
 .subtitle {
    font-family: 'SF UI Display';
@@ -121,6 +127,9 @@ $second_color: #282739;
    text-align: center;
    color: #3c4d6b;
    opacity: 0.6;
+   @media (max-width: $md2) {
+      font-size: 14px;
+   }
 }
 .swiper-button-prev {
    left: -43px;

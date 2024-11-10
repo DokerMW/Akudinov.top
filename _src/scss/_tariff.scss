@@ -1,5 +1,6 @@
 .tariff {
    padding: 50px 0 58px 0;
+
    &__wrapper {
       text-align: center;
    }
@@ -9,6 +10,12 @@
 
    &__subtitle {
       margin-bottom: 32px;
+      font-family: 'SF UI Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      text-align: center;
+      color: rgba(60, 77, 107, 0.77);
    }
 
    &__body {
@@ -45,12 +52,6 @@
 }
 
 .subtitle {
-   font-family: 'SF UI Display';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 18px;
-   text-align: center;
-   color: rgba(60, 77, 107, 0.77);
 }
 .item-tariff {
    box-shadow: 5px 5px 44px rgba(0, 0, 0, 0.09);
@@ -100,6 +101,7 @@
       padding-left: 21px;
       position: relative;
       line-height: 120%;
+
       &:last-child {
          margin: 0px 0px 0px 0px;
       }
