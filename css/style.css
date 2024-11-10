@@ -2946,11 +2946,37 @@ h6 {
 .clients {
   padding: 50px 0 78px 0;
 }
+@media (max-width: 767.98px) {
+  .clients {
+    padding: 40px 0 60px 0;
+  }
+}
 .clients__title {
   margin-bottom: 35px;
 }
+@media (max-width: 767.98px) {
+  .clients__title {
+    margin-bottom: 25px;
+  }
+}
 .clients__body {
   position: relative;
+}
+@media (max-width: 991.98px) {
+  .clients__body {
+    max-width: 650px;
+    margin: 0px auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .clients__body {
+    max-width: 380px;
+  }
+}
+@media (max-width: 479.98px) {
+  .clients__body {
+    max-width: 230px;
+  }
 }
 .clients__body .swiper-button-next::after, .clients__body .swiper-button-prev::after {
   font-size: 26px;
@@ -2958,6 +2984,12 @@ h6 {
 }
 .clients__body .swiper-button-disabled {
   color: rgba(60, 77, 107, 0.1);
+}
+.clients__slide {
+  text-align: center;
+}
+.clients__slide a {
+  height: 100%;
 }
 .clients__swiper-wrapper {
   -webkit-box-align: center;

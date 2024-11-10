@@ -34,6 +34,22 @@ const swiperClients = new Swiper('.clients__swiper', {
 		nextEl: '.clients__next-btn',
 		prevEl: '.clients__prev-btn',
 	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		481: {
+			slidesPerView: 2,
+			spaceBetween: 10,
+		},
+		769: {
+			slidesPerView: 4,
+			spaceBetween: 10,
+		},
+		992: {
+			slidesPerView: 6,
+		},
+	},
 });
 
 
