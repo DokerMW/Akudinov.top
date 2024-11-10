@@ -2199,8 +2199,18 @@ h6 {
 .receive {
   padding: 50px 0 53px 0;
 }
+@media (max-width: 767.98px) {
+  .receive {
+    padding: 40px 0;
+  }
+}
 .receive__title {
   margin-bottom: 22px;
+}
+@media (max-width: 767.98px) {
+  .receive__title {
+    margin-bottom: 13px;
+  }
 }
 .receive__subtitle {
   margin-bottom: 25px;
@@ -2209,6 +2219,17 @@ h6 {
   font-weight: 500;
   font-size: 18px;
   color: #3c4d6b;
+}
+@media (max-width: 767.98px) {
+  .receive__subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .receive__body {
+    padding: 0 20px;
+  }
 }
 .receive__item {
   font-family: "SF UI Display";
@@ -2219,6 +2240,12 @@ h6 {
   margin-bottom: 15px;
   padding-left: 19px;
   position: relative;
+}
+@media (max-width: 767.98px) {
+  .receive__item {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 }
 .receive__item::before {
   content: "";
