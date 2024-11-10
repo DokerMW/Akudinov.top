@@ -1,11 +1,16 @@
 .tariff {
    padding: 50px 0 58px 0;
-
+   @media (max-width: $md3) {
+      padding: 40px 0;
+   }
    &__wrapper {
       text-align: center;
    }
    &__title {
       margin-bottom: 17px;
+      @media (max-width: $md3) {
+         margin-bottom: 10px;
+      }
    }
 
    &__subtitle {
@@ -16,11 +21,22 @@
       font-size: 18px;
       text-align: center;
       color: rgba(60, 77, 107, 0.77);
+      @media (max-width: $md3) {
+         font-size: 16px;
+         margin-bottom: 20px;
+      }
    }
 
    &__body {
       display: flex;
       margin: 0 -10px 32px -10px;
+      @media (max-width: $md2) {
+         flex-wrap: wrap;
+         margin: 0px 0px 0px 0px;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
    }
 
    &__column {
@@ -28,6 +44,13 @@
       padding: 0 10px;
       position: relative;
       display: flex;
+      @media (max-width: $md2) {
+         flex: 1 0 100%;
+         padding: 0;
+         justify-content: center;
+         margin-bottom: 20px;
+         max-width: 400px;
+      }
       &.reverse {
          & .item-tariff {
             transform: scale(-1, 1);
@@ -48,6 +71,9 @@
       font-weight: 400;
       font-size: 14px;
       color: rgba(60, 77, 107, 0.77);
+      @media (max-width: $md3) {
+         font-size: 12px;
+      }
    }
 }
 
@@ -65,6 +91,12 @@
    display: flex;
    flex-direction: column;
    min-height: 100%;
+   @media (max-width: $md1) {
+      padding: 20px;
+   }
+   @media (max-width: $md3) {
+      padding: 10px;
+   }
    &__title {
       font-family: 'SF UI Display';
       font-style: normal;
@@ -73,6 +105,10 @@
       text-align: center;
       color: #3c4d6b;
       margin-bottom: 20px;
+      @media (max-width: $md1) {
+         font-size: 18px;
+         margin-bottom: 10px;
+      }
    }
 
    &__price {
@@ -83,11 +119,18 @@
       text-align: center;
       color: #286ab3;
       margin-bottom: 20px;
+      @media (max-width: $md1) {
+         font-size: 32px;
+         margin-bottom: 10px;
+      }
    }
 
    &__list {
       margin-bottom: 28px;
       flex: 1 0 auto;
+      @media (max-width: $md1) {
+         margin-bottom: 15px;
+      }
    }
 
    &__point {
@@ -101,7 +144,9 @@
       padding-left: 21px;
       position: relative;
       line-height: 120%;
-
+      @media (max-width: $md1) {
+         margin-bottom: 12px;
+      }
       &:last-child {
          margin: 0px 0px 0px 0px;
       }
@@ -122,6 +167,9 @@
       align-items: center;
       gap: 36px;
       margin-bottom: 36px;
+      @media (max-width: $md1) {
+         margin-bottom: 25px;
+      }
    }
 
    &__subpoint {
@@ -164,6 +212,10 @@
       right: 30px;
       background: url('../img/icons/rounded_arrow.svg') 0 0 no-repeat;
       cursor: pointer;
+      @media (max-width: $md1) {
+         top: 15px;
+         right: 15px;
+      }
    }
 }
 .item-tariff_reverse {
@@ -175,6 +227,9 @@
    background-color: #fff;
    transform: scale(0.1, 1);
    box-shadow: none;
+   @media (max-width: $md2) {
+      max-width: 400px;
+   }
 }
 .item-tariff__mirror-link_reverse {
    position: absolute;
@@ -185,4 +240,8 @@
    transform: scale(-1, 1);
    background: url('../img/icons/rounded_arrow.svg') 0 0 no-repeat;
    cursor: pointer;
+   @media (max-width: $md2) {
+      top: 15px;
+      left: 15px;
+   }
 }
