@@ -231,6 +231,7 @@ const swiperExamples = new Swiper('.examples__swiper', {
 	loop: false,
 	slidesPerView: 3,
 	spaceBetween: 20,
+	autoHeight: true,
 	navigation: {
 		nextEl: '.examples__next-btn',
 		prevEl: '.examples__prev-btn',
