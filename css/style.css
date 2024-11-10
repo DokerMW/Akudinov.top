@@ -2990,7 +2990,15 @@ h6 {
   text-align: center;
 }
 .clients__slide a {
+  max-width: 170px;
+  max-height: 80px;
   height: 100%;
+}
+.clients__slide a img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .clients__swiper-wrapper {
   -webkit-box-align: center;

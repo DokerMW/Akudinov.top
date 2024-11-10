@@ -32,11 +32,15 @@
    }
    &__slide {
       text-align: center;
-
-      @media (max-width: $md3) {
-      }
       & a {
+         max-width: 170px;
+         max-height: 80px;
          height: 100%;
+         & img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+         }
       }
    }
    &__swiper-wrapper {
