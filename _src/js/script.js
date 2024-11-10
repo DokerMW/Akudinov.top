@@ -1,3 +1,5 @@
+//@prepros-append _dynamic_adapt.js
+//@prepros-append _burger.js
 //@prepros-append _sliders.js
 //@prepros-append _accordion.js
 //@prepros-append _tabs.js
