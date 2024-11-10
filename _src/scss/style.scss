@@ -92,10 +92,12 @@ $second_color: #282739;
    border-radius: 10px;
    border: 1px solid #22b573;
    text-transform: uppercase;
-   &:hover {
-      color: #22b573;
-      background-color: #fff;
-      transition: all 0.3s;
+   @media (min-width: 1190px) {
+      &:hover {
+         color: #22b573;
+         background-color: #fff;
+         transition: all 0.3s;
+      }
    }
    &:active {
       position: relative;
