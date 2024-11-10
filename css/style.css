@@ -2313,13 +2313,13 @@ h6 {
   }
 }
 .cooperation__column:nth-child(1) .item-cooperation__image {
-  background: url("../img/cooperation/01.svg") 0 0/contain no-repeat;
+  background: url("../img/cooperation/01.svg") 0 0/cover no-repeat;
 }
 .cooperation__column:nth-child(2) .item-cooperation__image {
-  background: url("../img/cooperation/02.svg") 0 0/contain no-repeat;
+  background: url("../img/cooperation/02.svg") 0 0/cover no-repeat;
 }
 .cooperation__column:nth-child(3) .item-cooperation__image {
-  background: url("../img/cooperation/03.svg") 0 0/contain no-repeat;
+  background: url("../img/cooperation/03.svg") 0 0/cover no-repeat;
 }
 .cooperation__item {
   background-color: #fff;
