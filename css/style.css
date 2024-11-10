@@ -2622,6 +2622,26 @@ body._lock {
   overflow: hidden;
 }
 
-.error {
+.input {
+  position: relative;
+}
+.input .error_alert {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  font-size: 10px;
+  color: red;
+  display: none;
+  z-index: 100;
+}
+.input.error .error_alert {
+  display: block;
+}
+
+input.error {
   border: 1px solid red !important;
+}
+
+input.success {
+  border: 1px solid green !important;
 }

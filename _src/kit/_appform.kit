@@ -9,10 +9,22 @@
          </div>
          <form action="#" class="appform__form" id="form3">
             <div class="appform__grid">
-               <input type="text" name="name" placeholder="Имя" />
-               <input type="tel" name="phone" placeholder="Телефон" />
-               <input type="text" name="domen" placeholder="Домен" />
-               <input type="text" name="email" placeholder="Email" autocomplete="off" />
+               <div class="appform__input input">
+                  <input type="text" name="name" placeholder="Имя" />
+                  <span class="error_alert">Поле заполнено не верно или пустое</span>
+               </div>
+               <div class="appform__input input">
+                  <input type="tel" name="phone" placeholder="Телефон" />
+                  <span class="error_alert">Поле заполнено не верно или пустое</span>
+               </div>
+               <div class="appform__input input">
+                  <input type="text" name="domen" placeholder="Домен" />
+                  <span class="error_alert">Поле заполнено не верно или пустое</span>
+               </div>
+               <div class="appform__input input">
+                  <input type="text" name="email" placeholder="Email" autocomplete="off" />
+                  <span class="error_alert">Поле заполнено не верно или пустое</span>
+               </div>
                <textarea name="comment" placeholder="Дополнительно"></textarea>
             </div>
             <span class="appform__agree">

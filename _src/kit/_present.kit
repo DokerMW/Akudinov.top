@@ -15,9 +15,18 @@
          </div>
          <form class="present__form form-present" action="#" id="form1">
             <h3 class="present__subtitle">Бесплатный аудит</h3>
-            <input type="text" name="name" placeholder="Имя" />
-            <input type="text" name="domen" placeholder="Домен" />
-            <input type="tel" name="phone" placeholder="Телефон" />
+            <div class="form-present__input input">
+               <input type="text" name="name" placeholder="Имя" />
+               <span class="error_alert">Поле заполнено не верно или пустое</span>
+            </div>
+            <div class="form-present__input input">
+               <input type="text" name="domen" placeholder="Домен" />
+               <span class="error_alert">Поле заполнено не верно или пустое</span>
+            </div>
+            <div class="form-present__input input">
+               <input type="tel" name="phone" placeholder="Телефон" />
+               <span class="error_alert">Поле заполнено не верно или пустое</span>
+            </div>
             <button type="submit" class="form-present__btn btn">ПОЛУЧИТЬ БЕСПЛАТНЫЙ АУДИТ</button>
             <div class="form-present__policy">
                Отправляя форму вы соглашаетесь на обработку персональных данных, защищенных
