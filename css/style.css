@@ -1147,9 +1147,9 @@ h6 {
 .requirement__body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 126px 20px 126px;
+  -ms-grid-rows: minmax(126px, auto) 20px minmax(126px, auto);
   -ms-grid-columns: 371px 20px 371px 20px 371px;
-      grid-template: repeat(2, 126px)/repeat(3, 371px);
+      grid-template: repeat(2, minmax(126px, auto))/repeat(3, 371px);
   grid-auto-rows: 126px;
   grid-auto-flow: row;
   gap: 20px;
