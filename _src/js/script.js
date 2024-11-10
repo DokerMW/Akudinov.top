@@ -7,6 +7,3 @@
 //@prepros-append _mirror.js
 //@prepros-append _validation.js
 
-// import validation from './validation';
-
-// validation()
