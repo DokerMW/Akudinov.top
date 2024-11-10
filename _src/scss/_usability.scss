@@ -5,10 +5,30 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media (max-width: $md3) {
+         flex-direction: column;
+      }
    }
    &__title {
       text-align: left !important;
       margin-bottom: 11px;
+      @media (max-width: $md2) {
+         font-size: 26px;
+      }
+      @media (max-width: $md3) {
+         text-align: center !important;
+         font-size: 28px;
+         margin-bottom: 7px;
+      }
+   }
+   &__body {
+      @media (max-width: $md2) {
+         max-width: 450px;
+      }
+      @media (max-width: $md3) {
+         text-align: center;
+         margin-bottom: 10px;
+      }
    }
    &__text {
       max-width: 530px;
@@ -18,6 +38,9 @@
       font-size: 18px;
       line-height: 125%;
       color: rgba(60, 77, 107, 0.77);
+      @media (max-width: $md2) {
+         font-size: 16px;
+      }
    }
    &__price {
       text-align: right;
@@ -29,6 +52,14 @@
       font-size: 54px;
       color: #286ab3;
       margin-bottom: 7px;
+      white-space: nowrap;
+      @media (max-width: $md2) {
+         font-size: 36px;
+      }
+      @media (max-width: $md3) {
+         font-size: 44px;
+         text-align: center;
+      }
    }
    &__more {
       font-family: 'SF UI Display';
@@ -36,6 +67,10 @@
       font-weight: 400;
       font-size: 18px;
       color: #22b573;
+      @media (max-width: $md2) {
+         font-size: 16px;
+      }
+
       & span {
          padding-right: 22px;
          position: relative;
