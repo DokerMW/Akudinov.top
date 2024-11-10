@@ -289,6 +289,11 @@ h6 {
   background-color: #3d4147;
   color: #ffffff;
 }
+@media (max-width: 767.98px) {
+  .top-header {
+    display: none;
+  }
+}
 .top-header__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,6 +314,11 @@ h6 {
   margin-right: 48px;
   line-height: 110%;
 }
+@media (max-width: 1185px) {
+  .top-header__address {
+    display: none;
+  }
+}
 .top-header__schedule {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,6 +333,16 @@ h6 {
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
+}
+@media (max-width: 1185px) {
+  .top-header__schedule {
+    margin-left: auto;
+  }
+}
+@media (max-width: 991.98px) {
+  .top-header__schedule {
+    display: none;
+  }
 }
 .top-header__profile {
   color: #00c0f3;
@@ -362,6 +382,11 @@ h6 {
 @media (min-width: 1190px) {
   .top-header__profile:hover:after {
     width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  .top-header__profile {
+    margin-left: auto;
   }
 }
 .top-header__callback {
