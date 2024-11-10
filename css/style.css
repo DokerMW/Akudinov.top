@@ -2766,6 +2766,11 @@ h6 {
   background-color: #eaf1f8;
   padding: 50px 0 0 0;
 }
+@media (max-width: 767.98px) {
+  .appform {
+    padding-top: 40px;
+  }
+}
 .appform__container {
   position: relative;
 }
@@ -2773,6 +2778,16 @@ h6 {
   width: 625px;
   text-align: left;
   padding-bottom: 46px;
+}
+@media (max-width: 1185px) {
+  .appform__body {
+    width: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .appform__body {
+    padding-bottom: 40px;
+  }
 }
 .appform__title {
   margin-bottom: 12px;
@@ -2782,6 +2797,17 @@ h6 {
   font-weight: 700;
   font-size: 38px;
   color: #3c4d6b;
+}
+@media (max-width: 1185px) {
+  .appform__title {
+    text-align: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .appform__title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
 }
 .appform__text {
   margin-bottom: 25px;
@@ -2793,6 +2819,17 @@ h6 {
   color: #3c4d6b;
   opacity: 0.6;
 }
+@media (max-width: 1185px) {
+  .appform__text {
+    text-align: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .appform__text {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+}
 .appform__grid {
   display: -ms-grid;
   display: grid;
@@ -2801,6 +2838,22 @@ h6 {
       grid-template: 50px 50px 100px/repeat(2, 321px);
   gap: 21px;
   margin-bottom: 26px;
+}
+@media (max-width: 1185px) {
+  .appform__grid {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .appform__grid {
+    -ms-grid-rows: 50px 10px 50px 10px 50px 10px 50px 10px 50px;
+    -ms-grid-columns: 317px;
+        grid-template: repeat(5, 50px)/317px;
+    gap: 10px;
+  }
 }
 .appform__grid input {
   padding-left: 21px;
@@ -2814,6 +2867,11 @@ h6 {
   color: #3c4d6b;
   background-color: #fff;
 }
+@media (max-width: 767.98px) {
+  .appform__grid input {
+    font-size: 14px;
+  }
+}
 .appform__grid textarea {
   resize: none;
   border-radius: 10px;
@@ -2826,6 +2884,14 @@ h6 {
   font-size: 16px;
   color: #3c4d6b;
 }
+@media (max-width: 767.98px) {
+  .appform__grid textarea {
+    grid-column: auto;
+  }
+}
+.appform__form {
+  text-align: center;
+}
 .appform__agree {
   max-width: 500px;
   display: inline-block;
@@ -2837,6 +2903,12 @@ h6 {
   color: #3c4d6b;
   opacity: 0.7;
   margin-bottom: 26px;
+}
+@media (max-width: 1185px) {
+  .appform__agree {
+    max-width: none;
+    text-align: center;
+  }
 }
 .appform__agree a {
   color: #22b573;
@@ -2855,10 +2927,20 @@ h6 {
   color: #ffffff;
   padding: 17px 87px;
 }
+@media (max-width: 1185px) {
+  .appform__btn {
+    text-align: center;
+  }
+}
 .appform__image {
   position: absolute;
   right: 12px;
   bottom: 0;
+}
+@media (max-width: 1185px) {
+  .appform__image {
+    display: none;
+  }
 }
 
 .clients {

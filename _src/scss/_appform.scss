@@ -1,6 +1,9 @@
 .appform {
    background-color: #eaf1f8;
    padding: 50px 0 0 0;
+   @media (max-width: $md3) {
+      padding-top: 40px;
+   }
    &__container {
       position: relative;
    }
@@ -8,6 +11,12 @@
       width: 625px;
       text-align: left;
       padding-bottom: 46px;
+      @media (max-width: $md1) {
+         width: auto;
+      }
+      @media (max-width: $md3) {
+         padding-bottom: 40px;
+      }
    }
    &__title {
       margin-bottom: 12px;
@@ -17,6 +26,13 @@
       font-weight: 700;
       font-size: 38px;
       color: #3c4d6b;
+      @media (max-width: $md1) {
+         text-align: center;
+      }
+      @media (max-width: $md3) {
+         font-size: 28px;
+         margin-bottom: 10px;
+      }
    }
    &__text {
       margin-bottom: 25px;
@@ -27,12 +43,27 @@
       line-height: 20px;
       color: #3c4d6b;
       opacity: 0.6;
+      @media (max-width: $md1) {
+         text-align: center;
+      }
+      @media (max-width: $md3) {
+         font-size: 14px;
+         margin-bottom: 25px;
+      }
    }
    &__grid {
       display: grid;
       grid-template: 50px 50px 100px / repeat(2, 321px);
       gap: 21px;
       margin-bottom: 26px;
+      @media (max-width: $md1) {
+         justify-content: center;
+         text-align: center;
+      }
+      @media (max-width: $md3) {
+         grid-template: repeat(5, 50px) / 317px;
+         gap: 10px;
+      }
       & input {
          padding-left: 21px;
          width: 321px;
@@ -44,6 +75,9 @@
          font-size: 16px;
          color: #3c4d6b;
          background-color: #fff;
+         @media (max-width: $md3) {
+            font-size: 14px;
+         }
       }
       & textarea {
          resize: none;
@@ -55,7 +89,13 @@
          font-weight: 300;
          font-size: 16px;
          color: #3c4d6b;
+         @media (max-width: $md3) {
+            grid-column: auto;
+         }
       }
+   }
+   &__form {
+      text-align: center;
    }
    &__agree {
       max-width: 500px;
@@ -68,6 +108,10 @@
       color: #3c4d6b;
       opacity: 0.7;
       margin-bottom: 26px;
+      @media (max-width: $md1) {
+         max-width: none;
+         text-align: center;
+      }
       & a {
          color: #22b573;
          @media (min-width: 1190px) {
@@ -85,10 +129,16 @@
       line-height: 100%;
       color: #ffffff;
       padding: 17px 87px;
+      @media (max-width: $md1) {
+         text-align: center;
+      }
    }
    &__image {
       position: absolute;
       right: 12px;
       bottom: 0;
+      @media (max-width: $md1) {
+         display: none;
+      }
    }
 }
