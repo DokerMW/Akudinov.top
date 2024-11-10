@@ -53,6 +53,7 @@
       color: $blue_bg;
       margin-bottom: 7px;
       white-space: nowrap;
+      max-width: 500px;
       @media (max-width: $md2) {
          font-size: 36px;
       }
