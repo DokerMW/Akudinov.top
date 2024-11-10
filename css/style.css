@@ -1467,6 +1467,11 @@ h6 {
   padding: 50px 0 52px 0;
   background-color: #fff;
 }
+@media (max-width: 767.98px) {
+  .advantages {
+    padding: 40px 0;
+  }
+}
 .advantages__title {
   margin-bottom: 25px;
 }
@@ -1477,11 +1482,43 @@ h6 {
   height: 100%;
   margin: 0 -10px;
 }
+@media (max-width: 1185px) {
+  .advantages__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (max-width: 767.98px) {
+  .advantages__body {
+    margin: 0 -5px;
+  }
+}
 .advantages__column {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
   padding: 0 10px;
+}
+@media (max-width: 1185px) {
+  .advantages__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1185px) {
+  .advantages__column {
+    padding: 0 5px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 479.98px) {
+  .advantages__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
 }
 .item-advantages {
   background-color: #fff;
@@ -1498,6 +1535,11 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media (max-width: 767.98px) {
+  .item-advantages {
+    padding: 15px 20px;
+  }
+}
 .item-advantages__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1507,12 +1549,28 @@ h6 {
           align-items: center;
   margin-bottom: 5px;
 }
+@media (max-width: 767.98px) {
+  .item-advantages__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
 .item-advantages__img {
   -ms-grid-column-align: start;
       justify-self: start;
   width: 33px;
   height: 33px;
   margin-right: 15px;
+}
+@media (max-width: 767.98px) {
+  .item-advantages__img {
+    margin: 0px 0px 8px 0px;
+  }
 }
 .item-advantages__img_01 {
   background: url("../img/advantages/01.svg") 0 0/contain no-repeat;
@@ -1533,6 +1591,11 @@ h6 {
   font-size: 20px;
   color: #3c4d6b;
 }
+@media (max-width: 767.98px) {
+  .item-advantages__title {
+    font-size: 18px;
+  }
+}
 .item-advantages__text {
   font-family: "SF UI Display";
   font-style: normal;
@@ -1544,6 +1607,11 @@ h6 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
+}
+@media (max-width: 767.98px) {
+  .item-advantages__text {
+    font-size: 14px;
+  }
 }
 
 .usability {
