@@ -1520,6 +1520,7 @@ h6 {
             flex: 0 1 100%;
   }
 }
+
 .item-advantages {
   background-color: #fff;
   height: 100%;
@@ -3159,7 +3160,7 @@ h6 {
 .slide-review-text__title {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
   color: #3c4d6b;
   margin-bottom: 5px;
