@@ -2264,14 +2264,35 @@ h6 {
   background-color: #eaf1f8;
   padding: 50px 0;
 }
+@media (max-width: 767.98px) {
+  .cooperation {
+    padding: 40px 0;
+  }
+}
 .cooperation__title {
   margin-bottom: 30px;
+}
+@media (max-width: 767.98px) {
+  .cooperation__title {
+    margin-bottom: 20px;
+  }
 }
 .cooperation__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 -21px;
+}
+@media (max-width: 991.98px) {
+  .cooperation__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (max-width: 767.98px) {
+  .cooperation__body {
+    padding: 0 30px;
+  }
 }
 .cooperation__column {
   -webkit-box-flex: 0;
@@ -2281,6 +2302,14 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media (max-width: 991.98px) {
+  .cooperation__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin-bottom: 20px;
+  }
 }
 .cooperation__column:nth-child(1) .item-cooperation__image {
   background: url("../img/cooperation/01.svg") 0 0/contain no-repeat;
@@ -2317,6 +2346,12 @@ h6 {
   height: 67px;
   margin-bottom: 15px;
 }
+@media (max-width: 767.98px) {
+  .item-cooperation__image {
+    width: 55px;
+    height: 53px;
+  }
+}
 .item-cooperation__text {
   max-width: 290px;
   font-family: "SF UI Display";
@@ -2327,6 +2362,17 @@ h6 {
   color: #3c4d6b;
   opacity: 0.6;
   margin-bottom: 25px;
+}
+@media (max-width: 991.98px) {
+  .item-cooperation__text {
+    max-width: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .item-cooperation__text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
 }
 .item-cooperation__link span {
   font-family: "SF UI Display";
@@ -2342,6 +2388,11 @@ h6 {
 @media (min-width: 1190px) {
   .item-cooperation__link span:hover {
     text-decoration: underline;
+  }
+}
+@media (max-width: 767.98px) {
+  .item-cooperation__link span {
+    margin-bottom: 15px;
   }
 }
 .item-cooperation__link span::after {
