@@ -3020,6 +3020,11 @@ h6 {
   background-color: #eaf1f8;
   padding: 50px 0 48px 0;
 }
+@media (max-width: 767.98px) {
+  .reviews {
+    padding: 40px 0;
+  }
+}
 .reviews__title {
   margin-bottom: 30px;
 }
@@ -3056,6 +3061,22 @@ h6 {
   opacity: 1;
   border-bottom: 2px solid #22b573;
 }
+@media (max-width: 1185px) {
+  .tabs__body {
+    max-width: 800px;
+    margin: 0px auto;
+  }
+}
+@media (max-width: 991.98px) {
+  .tabs__body {
+    max-width: 400px;
+  }
+}
+@media (max-width: 767.98px) {
+  .tabs__body {
+    max-width: 250px;
+  }
+}
 .tabs__item {
   display: none;
   position: relative;
@@ -3077,6 +3098,11 @@ h6 {
   padding: 30px 15px 32px 30px;
   text-align: left;
 }
+@media (max-width: 767.98px) {
+  .slide-review-text {
+    padding: 20px;
+  }
+}
 .slide-review-text__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3085,6 +3111,18 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
+}
+@media (max-width: 767.98px) {
+  .slide-review-text__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
 }
 .slide-review-text__avatar {
   -webkit-box-flex: 1;
@@ -3107,6 +3145,11 @@ h6 {
           align-items: center;
   margin-right: 13px;
 }
+@media (max-width: 767.98px) {
+  .slide-review-text__avatar {
+    margin-bottom: 10px;
+  }
+}
 .slide-review-text__avatar img {
   max-width: 100%;
   max-height: 100%;
@@ -3121,6 +3164,11 @@ h6 {
   color: #3c4d6b;
   margin-bottom: 5px;
 }
+@media (max-width: 767.98px) {
+  .slide-review-text__title {
+    font-size: 16px;
+  }
+}
 .slide-review-text__subtitle {
   font-family: "Inter";
   font-style: normal;
@@ -3131,6 +3179,11 @@ h6 {
   line-height: 120%;
   max-width: 160px;
 }
+@media (max-width: 767.98px) {
+  .slide-review-text__subtitle {
+    font-size: 12px;
+  }
+}
 .slide-review-text__text {
   font-family: "Inter";
   font-style: normal;
@@ -3140,6 +3193,11 @@ h6 {
   color: #3c4d6b;
   opacity: 0.6;
   margin-bottom: 22px;
+}
+@media (max-width: 767.98px) {
+  .slide-review-text__text {
+    font-size: 14px;
+  }
 }
 .slide-review-text__link span {
   font-family: "SF UI Display";
@@ -3169,6 +3227,9 @@ h6 {
 
 .video-reviews__swiper-wrapper {
   min-height: 375px;
+}
+.video-reviews__slide {
+  max-width: 273px;
 }
 .slide-review-video {
   border-radius: 20px;

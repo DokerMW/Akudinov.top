@@ -63,6 +63,20 @@ const swiperReviewsText = new Swiper('.text-reviews__swiper', {
 		nextEl: '.reviews-text__next-btn',
 		prevEl: '.reviews-text__prev-btn',
 	},
+	breakpoints: {
+
+		481: {
+			slidesPerView: 1,
+			spaceBetween: 10,
+		},
+		992: {
+			slidesPerView: 2,
+			spaceBetween: 10,
+		},
+		1195: {
+			slidesPerView: 3,
+		},
+	},
 });
 const swiperReviewsVideo = new Swiper('.video-reviews__swiper', {
 	direction: 'horizontal',
@@ -73,5 +87,20 @@ const swiperReviewsVideo = new Swiper('.video-reviews__swiper', {
 	navigation: {
 		nextEl: '.reviews-video__next-btn',
 		prevEl: '.reviews-video__prev-btn',
+	},
+	breakpoints: {
+
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 50,
+			centeredSlides: true,
+		},
+		992: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+		1195: {
+			slidesPerView: 4,
+		},
 	},
 });
