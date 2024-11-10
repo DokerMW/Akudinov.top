@@ -1,8 +1,22 @@
 .included {
    background-color: #eaf1f8;
    padding: 50px 0 48px 0;
+   @media (max-width: $md3) {
+      padding: 40px 0;
+   }
    &__title {
       margin-bottom: 30px;
+      @media (max-width: $md3) {
+         margin-bottom: 15px;
+      }
+   }
+   &__body {
+      @media (max-width: $md3) {
+         padding: 0 20px;
+      }
+      @media (max-width: $md4) {
+         padding: 0px 0px 0px 0px;
+      }
    }
    & .ac.is-active > .ac-header .ac-trigger::after {
       content: '';
@@ -47,6 +61,9 @@
    }
    &__list {
       padding: 24px 0 20px 0;
+      @media (max-width: $md3) {
+         padding: 14px 0 10px 0;
+      }
    }
    &__point {
       font-family: 'SF UI Display';
@@ -57,6 +74,14 @@
       margin-bottom: 24px;
       padding-left: 20px;
       position: relative;
+      @media (max-width: $md3) {
+         font-size: 14px;
+         margin-bottom: 10px;
+         padding-left: 0;
+      }
+      @media (max-width: $md4) {
+         font-size: 12px;
+      }
       &::before {
          content: '';
          position: absolute;
@@ -65,6 +90,9 @@
          width: 11px;
          height: 9px;
          background: url('../img/icons/check.svg') 0 0 no-repeat;
+         @media (max-width: $md3) {
+            background: none;
+         }
       }
       &:last-child {
          margin: 0px 0px 0px 0px;
@@ -79,6 +107,13 @@
    color: #3c4d6b;
    height: 60px;
    position: relative;
+   @media (max-width: $md3) {
+      font-size: 15px;
+      height: 45px;
+   }
+   @media (max-width: $md4) {
+      font-size: 12px;
+   }
    & .step {
       color: #286ab3;
    }
@@ -89,6 +124,12 @@
 .included .accordion-included__header {
    padding: 0 10px 0 20px;
    height: 60px;
+   @media (max-width: $md3) {
+      height: 45px;
+   }
+   @media (max-width: $md4) {
+      padding: 0 10px;
+   }
 }
 .close {
    position: absolute;
@@ -105,6 +146,10 @@
       right: 10px;
       top: 50%;
       transform: translate(0, -50%);
+      @media (max-width: $md3) {
+         width: 15px;
+         height: 15px;
+      }
       &::after {
          content: '';
          position: absolute;
@@ -116,6 +161,10 @@
          transform: translate(0, -50%);
          transition: all 0.3s;
          background-color: #22b573;
+         @media (max-width: $md3) {
+            width: 15px;
+            height: 2px;
+         }
       }
       &::before {
          content: '';
@@ -128,6 +177,10 @@
          transform: translate(50%, 0);
          transition: all 0.3s;
          display: inline-block;
+         @media (max-width: $md3) {
+            height: 15px;
+            width: 2px;
+         }
       }
    }
 }
