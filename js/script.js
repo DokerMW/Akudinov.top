@@ -342,8 +342,6 @@ const tabOpening = (event) => {
 
 
 
-//=================
-//BodyLock
 function body_lock(delay) {
 	let body = document.querySelector("body");
 	if (body.classList.contains('_lock')) {
@@ -388,7 +386,6 @@ function body_lock_add(delay) {
 		}, delay);
 	}
 }
-//=================
 
 let unlock = true;
 let popup_link = document.querySelectorAll('._popup-link');
