@@ -109,10 +109,10 @@
    src: url('../fonts/SF UI Display Regular.eot');
    src: url('../fonts/SF UI Display Regular.eot?#iefix') format('embedded-opentype'),
       url('../fonts/SF UI Display Regular.woff2') format('woff2'),
-      url('../fonts/SF UI Display Regular.woff') format('woff'),
+      url('../fonts/SF UI Display Light.woff') format('woff'),
       url('../fonts/SF UI Display Regular.ttf') format('truetype'),
       url('../fonts/SF UI Display Regular.svg#sf_ui_display_regular') format('svg');
-   font-weight: 300;
+   font-weight: 400;
    font-style: normal;
    font-display: swap;
 }
